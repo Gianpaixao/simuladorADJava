@@ -1,7 +1,12 @@
+package controle;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
+
+import modelo.Gerador;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -12,10 +17,10 @@ import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
-
-
-
-public class Simulador extends ApplicationFrame{
+	
+public class SimuladorMesh extends ApplicationFrame
+{
+	
 	static Gerador gerador = new Gerador();
 	final static XYSeries series  = new XYSeries ("custo médio");
 	final static XYSeries seriesPi0  = new XYSeries ("PI0");
@@ -26,8 +31,10 @@ public class Simulador extends ApplicationFrame{
 	static char estado = '0';
 	static int i, j, k, qtde, random, amostra = 50, iteracoes = 50;
 	static double t_0 = 0.0, t_p = 0.0, t_r = 0.0, t_f = 0.0, tempo = 0.0, cv, cs, custo[] = new double[amostra],custoNo[] = new double[amostra],custoAmostra[] = new double[amostra];
+	static BufferedWriter buffWrite;
 	
-	public Simulador(XYSeries series, String nomeGrafico, String variavel) {
+	
+	public SimuladorMesh(XYSeries series, String nomeGrafico, String variavel) {
 		super("Grafico de Simulação");  
 		final JFreeChart chart;
 		final XYSeriesCollection data = new XYSeriesCollection(series);  
@@ -48,16 +55,18 @@ public class Simulador extends ApplicationFrame{
 	
 	private static void plotarGrafico(XYSeries series, String nomeGrafico, String variavel)
 	{
-		final Simulador demo = new Simulador(series, nomeGrafico, variavel);  
+		final SimuladorMesh demo = new SimuladorMesh(series, nomeGrafico, variavel);  
 		demo.pack();  
 		RefineryUtilities.centerFrameOnScreen(demo);  
 		demo.setVisible(true);
 		demo.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 	}
 	
-	public static void main(String[] args){
-		execucao();
+	public static void main(String[] args) throws IOException{
 		
+		buffWrite = new BufferedWriter(new FileWriter("output.txt"));
+		execucao();
+		buffWrite.close();
 		
 		Scanner s = new Scanner(System.in);
 		while(true){
@@ -101,7 +110,7 @@ public class Simulador extends ApplicationFrame{
 		});*/
 	}
 	
-	private static void execucao()
+	private static void execucao() throws IOException
 	{
 		Random rand = new Random();
 		
@@ -123,6 +132,8 @@ public class Simulador extends ApplicationFrame{
 			variancia = 0.0;
 			double proxEvento = 0;
 			r4 += (1.0/qtde);
+			
+			buffWrite.append("============================= r4 = "+r4+"============================\n");
 			
 			System.out.println("\n========================== r4 = "+r4+" ==========================");
 			for(j=0; j<amostra;j++)
@@ -193,7 +204,7 @@ public class Simulador extends ApplicationFrame{
 			}
 			
 			media = media / j;
-			
+			buffWrite.append("O custo medio foi de "+ media+"\n");
 			System.out.println("\nO custo medio foi de "+ media);
 			
 			// variancia, desvio e intervalo de confianca para o custo
@@ -207,9 +218,12 @@ public class Simulador extends ApplicationFrame{
 			confiancaMaior = media + intervaloConfianca(desvio,amostra);
 			
 			System.out.println("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")");
-
+			buffWrite.append("O intervalo de confiança para 95% é: ("+confiancaMenor+" < u < "+confiancaMaior+")\n");
+			
 			// variancia, desvio e intervalo de confianca para o custo do no CV
 			
+			mediaCv = mediaCv / amostra;
+			buffWrite.append("O custo medio de Cv foi de "+ mediaCv+"\n");
 			variancia = variancia(custoNo,mediaCv,amostra);
 			desvio = Math.sqrt(variancia);
 			
@@ -218,10 +232,13 @@ public class Simulador extends ApplicationFrame{
 			confiancaMenor = mediaCv - intervaloConfianca(desvio,amostra);
 			confiancaMaior = mediaCv + intervaloConfianca(desvio,amostra);
 			
+			buffWrite.append("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")\n");
 			System.out.println("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")");
 
 			// variancia, desvio e intervalo de confianca para o custo do no CS
 			
+			mediaCs = mediaCs / amostra;
+			buffWrite.append("O custo medio de Cs foi "+mediaCs+"\n");
 			variancia = variancia(custoAmostra,mediaCs,amostra);
 			desvio = Math.sqrt(variancia);
 			
@@ -231,7 +248,7 @@ public class Simulador extends ApplicationFrame{
 			confiancaMaior = mediaCs + intervaloConfianca(desvio,amostra);
 			
 			System.out.println("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")");
-
+			buffWrite.append("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")\n");
 			
 			series.add(r4, media);
 			seriesPi0.add(r4,pi_0);
@@ -258,4 +275,5 @@ public class Simulador extends ApplicationFrame{
 		
 		return var/qtde;
 	}
+
 }
