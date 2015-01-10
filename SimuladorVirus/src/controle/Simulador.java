@@ -124,8 +124,8 @@ public class Simulador extends ApplicationFrame{
 		r3 = 3.0;
 		
 		lambda = 1.0/8640;
-		cv = 9.0;
-		cs = 10.0;
+		cv = 10.0;
+		cs = 9.0;
 		
 		for(k=0;k<qtde;k++)
 		{

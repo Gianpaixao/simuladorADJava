@@ -1,4 +1,5 @@
 package modelo;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -38,11 +39,11 @@ public class FilaDeEventos {
 	public Evento removeEvento(){
 		setEventosNaFila(fila.size()-1);
 		Evento atendimento = ((LinkedList<Evento>) fila).removeFirst();
-		if(atendimento.getTipo() == TipoEvento.INFECCAO)
+		if(atendimento.getTipo() == TipoEvento.I_P)
 		{
 			addNosInfectados();
 		}
-		if(atendimento.getTipo() == TipoEvento.CURA)
+		if(atendimento.getTipo() == TipoEvento.F_I ||atendimento.getTipo() == TipoEvento.R_I)
 		{
 			remNosInfectados();
 		}
@@ -52,6 +53,7 @@ public class FilaDeEventos {
 	
 	public void addEvento(Evento evento){
 		((LinkedList<Evento>) fila).addLast(evento);
+		Collections.sort(fila);
 		setEventosNaFila(fila.size());		
 	}
 

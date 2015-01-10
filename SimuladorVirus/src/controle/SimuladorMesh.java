@@ -3,10 +3,15 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
 
+import modelo.Evento;
+import modelo.FilaDeEventos;
 import modelo.Gerador;
+import modelo.No;
+import modelo.TipoEvento;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -26,12 +31,13 @@ public class SimuladorMesh extends ApplicationFrame
 	final static XYSeries seriesPi0  = new XYSeries ("PI0");
 	final static XYSeries seriesCs  = new XYSeries ("CS");
 	final static XYSeries seriesCv  = new XYSeries ("CV");
-	static double r1, r2, r3, r4, lambda, pi_0, pi_p, pi_r, pi_f;
+	static double r1, r2, r3, r4, lambda, pi_0, pi_p, pi_r, pi_f, beta;
 	static double media = 0.0, variancia = 0.0, desvio, mediaCv = 0.0, mediaCs = 0.0, confiancaMenor, confiancaMaior;
 	static char estado = '0';
-	static int i, j, k, qtde, random, amostra = 50, iteracoes = 50;
+	static int i, j, k,l, qtde, random, amostra = 50, iteracoes = 20;
 	static double t_0 = 0.0, t_p = 0.0, t_r = 0.0, t_f = 0.0, tempo = 0.0, cv, cs, custo[] = new double[amostra],custoNo[] = new double[amostra],custoAmostra[] = new double[amostra];
 	static BufferedWriter buffWrite;
+	public static Random rand;
 	
 	
 	public SimuladorMesh(XYSeries series, String nomeGrafico, String variavel) {
@@ -63,7 +69,21 @@ public class SimuladorMesh extends ApplicationFrame
 	}
 	
 	public static void main(String[] args) throws IOException{
+		/*FilaDeEventos filaDeEventos = new FilaDeEventos();
+		filaDeEventos.getFila().add(new Evento(2.0,TipoEvento.CURA,new No(1,"0")));
+		filaDeEventos.getFila().add(new Evento(1.0,TipoEvento.CURA,new No(1,"0")));
+		filaDeEventos.getFila().add(new Evento(4.0,TipoEvento.CURA,new No(1,"0")));
+		filaDeEventos.getFila().add(new Evento(3.0,TipoEvento.CURA,new No(1,"0")));
 		
+		for(Evento e : filaDeEventos.getFila()){
+			System.out.println("tempo "+e.getInstanteEvento());
+		}
+		
+		Collections.sort(filaDeEventos.getFila());
+		for(Evento e : filaDeEventos.getFila()){
+			System.out.println("tempo "+e.getInstanteEvento());
+		}
+		System.exit(0);*/
 		buffWrite = new BufferedWriter(new FileWriter("output.txt"));
 		execucao();
 		buffWrite.close();
@@ -112,26 +132,32 @@ public class SimuladorMesh extends ApplicationFrame
 	
 	private static void execucao() throws IOException
 	{
-		Random rand = new Random();
+		rand = new Random();
 		
 		r4 = 0.0;
-		qtde = 100;
+		qtde = 20;
 		r1 = 2.0;
 		r2 = 0.8;
 		r3 = 3.0;
 		
 		lambda = 1.0/8640;
-		cv = 9.0;
-		cs = 10.0;
+		cv = 10.0;
+		cs = 9.0;
+		beta = 0.08;
 		
 		for(k=0;k<qtde;k++)
 		{
-			estado = '0';
-			
 			media = 0.0;
 			variancia = 0.0;
-			double proxEvento = 0;
 			r4 += (1.0/qtde);
+			
+			FilaDeEventos filaDeEventos = new FilaDeEventos();
+			No no[] = new No[10];
+			int noInfectado = rand.nextInt(10);
+			for(l=0;l<10;l++){
+				if(l==noInfectado) no[l] = new No(l,"p");
+				else no[l] = new No(l,"0");
+			}
 			
 			buffWrite.append("============================= r4 = "+r4+"============================\n");
 			
@@ -143,54 +169,43 @@ public class SimuladorMesh extends ApplicationFrame
 				t_r = 0.0;
 				t_f = 0.0;
 				tempo = 0.0;
+				
+				for(i=0;i<10;i++)
+				{
+					int indice = (noInfectado+0)%10;
+					agendarEvento(no[indice], filaDeEventos);
+				}
 				for(i=0;i<iteracoes;i++)
 				{
-					random = rand.nextInt(100);
-					switch (estado) {
-						case '0':	
-							estado='p';
-							proxEvento = gerador.geradorExponencial(r2);
-							tempo += proxEvento;
-							t_0 += proxEvento;
+					Evento evento = filaDeEventos.removeEvento();
+					tempo = evento.getInstanteEvento();
+					switch(evento.getTipo()){
+						case I_P:
+							evento.getNo().setEstado("p");
+							agendarEvento(evento.getNo(), filaDeEventos);
 							break;
-						case 'p':
-							double prob = (r4/(r4+lambda))*100;
-							
-							if(random < prob){
-								proxEvento = gerador.geradorExponencial(r4);
-								estado = 'r';
-							}
-							else if(random > prob){
-								estado = 'f';
-								proxEvento = gerador.geradorExponencial(lambda);
-							}
-							tempo += proxEvento;
-							t_p += proxEvento;
-							
+						case P_R:
+							evento.getNo().setEstado("r");
+							agendarEvento(evento.getNo(), filaDeEventos);
 							break;
-						case 'r':
-							estado='0';
-							proxEvento = gerador.geradorExponencial(r3);
-							tempo += proxEvento;
-							t_r += proxEvento;
-							//t_r += 1.0;
+						case P_F:
+							evento.getNo().setEstado("f");
+							agendarEvento(evento.getNo(), filaDeEventos);
 							break;
-						case 'f':
-							estado='0';
-							proxEvento = gerador.geradorExponencial(r1);
-							tempo += proxEvento;
-							t_f += proxEvento;
-							//t_p += 1.0;
+						case R_I:
+							evento.getNo().setEstado("0");
+							agendarEvento(evento.getNo(), filaDeEventos);
+							break;
+						case F_I:
+							evento.getNo().setEstado("0");
+							agendarEvento(evento.getNo(), filaDeEventos);
 							break;
 						default:
-							System.out.println("Fail!");
+							System.out.println("Tipo de Evento inválido!");
 							System.exit(0);
-							break;
+							break; 
 					}
-					
-					//tempo += 1.0;
 				}
-				
 				pi_0 = t_0/tempo;
 				pi_p = t_p/tempo;
 				
@@ -274,6 +289,61 @@ public class SimuladorMesh extends ApplicationFrame
 		}
 		
 		return var/qtde;
+	}
+	
+	private static void agendarEvento(No no, FilaDeEventos eventos){
+		random = rand.nextInt(100);
+		double proxEvento = 0.0;
+		double tempo = 0.0;
+		switch (no.getEstado()) {
+			case "0":	
+				proxEvento = gerador.geradorExponencial(eventos.getNosInfectados()*beta);
+				tempo += proxEvento;
+				Evento evento = new Evento(tempo,TipoEvento.I_P,no);
+				eventos.addEvento(evento);
+				no.setT_0(no.getT_0()+proxEvento);
+				t_0+=proxEvento;
+				break;
+			case "p":
+				double prob = (r4/(r4+lambda))*100;
+				
+				if(random < prob){
+					proxEvento = gerador.geradorExponencial(r4);
+					tempo += proxEvento;
+					Evento evento1 = new Evento(tempo,TipoEvento.P_R,no);
+					eventos.addEvento(evento1);
+					no.setT_p(no.getT_p()+proxEvento);
+					t_p +=proxEvento;
+				}
+				else if(random > prob){
+					proxEvento = gerador.geradorExponencial(lambda);
+					tempo += proxEvento;
+					Evento evento2 = new Evento(tempo,TipoEvento.P_F,no);
+					eventos.addEvento(evento2);
+					no.setT_p(no.getT_p()+proxEvento);
+					t_p+=proxEvento;
+				}
+				break;
+			case "r":
+				proxEvento = gerador.geradorExponencial(r3);
+				tempo += proxEvento;
+				Evento evento3 = new Evento(tempo,TipoEvento.R_I,no);
+				eventos.addEvento(evento3);
+				no.setT_r(no.getT_r()+proxEvento);
+				break;
+			case "f":
+				estado='0';
+				proxEvento = gerador.geradorExponencial(r1);
+				tempo += proxEvento;
+				Evento evento4 = new Evento(tempo, TipoEvento.F_I, no);
+				eventos.addEvento(evento4);
+				no.setT_f(no.getT_f()+proxEvento);
+				break;
+			default:
+				System.out.println("Fail!");
+				System.exit(0);
+				break;
+		}
 	}
 
 }

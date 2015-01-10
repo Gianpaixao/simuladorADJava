@@ -4,18 +4,53 @@ public class No
 {
 	private String numeroNo;
 	private String estado;
+	private double t_0 = 0.0, t_p = 0.0, t_r = 0.0,	t_f = 0.0;
 	
-	public No(String numeroNo, String estado)
+	public No(int numeroNo, String estado)
 	{
-		this.numeroNo = numeroNo;
+		this.numeroNo = numeroNo+"";
 		this.estado = estado;
 	}
 	
 	public String getEstado() {
-		return estado;
+		return this.estado;
 	}
 	
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
+
+	public double getT_0() {
+		return t_0;
+	}
+
+	public void setT_0(double t_0) {
+		this.t_0 = t_0;
+	}
+
+	public double getT_p() {
+		return t_p;
+	}
+
+	public void setT_p(double t_p) {
+		this.t_p = t_p;
+	}
+
+	public double getT_r() {
+		return t_r;
+	}
+
+	public void setT_r(double t_r) {
+		this.t_r = t_r;
+	}
+
+	public double getT_f() {
+		return t_f;
+	}
+
+	public void setT_f(double t_f) {
+		this.t_f = t_f;
+	}
+	
+	
 }

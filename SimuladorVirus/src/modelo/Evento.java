@@ -1,6 +1,6 @@
 package modelo;
 
-public class Evento {
+public class Evento implements Comparable<Evento>{
 	private double instanteEvento;
 	private TipoEvento tipo;
 	private No no;
@@ -21,5 +21,12 @@ public class Evento {
 	
 	public No getNo(){
 		return this.no;
+	}
+
+	@Override
+	public int compareTo(Evento o) {
+		if(this.instanteEvento > o.instanteEvento) return 1;
+		else if(this.instanteEvento < o.instanteEvento) return -1;
+		return this.getNo().getEstado().compareToIgnoreCase(o.getNo().getEstado());
 	}
 }
