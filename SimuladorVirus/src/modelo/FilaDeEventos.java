@@ -37,19 +37,25 @@ public class FilaDeEventos {
 	}
 	
 	public Evento removeEvento(){
-		setEventosNaFila(fila.size()-1);
-		Evento atendimento = ((LinkedList<Evento>) fila).removeFirst();
-		if(atendimento.getTipo() == TipoEvento.I_P)
-		{
-			addNosInfectados();
-		}
-		if(atendimento.getTipo() == TipoEvento.F_I ||atendimento.getTipo() == TipoEvento.R_I)
-		{
-			remNosInfectados();
-		}
 		
-		return atendimento;
+		if(eventosNaFila>0)
+		{
+			setEventosNaFila(fila.size()-1);
+			Evento atendimento = ((LinkedList<Evento>) fila).removeFirst();
+			if(atendimento.getTipo() == TipoEvento.I_P)
+			{
+				addNosInfectados();
+			}
+			if(atendimento.getTipo() == TipoEvento.F_I ||atendimento.getTipo() == TipoEvento.R_I)
+			{
+				remNosInfectados();
+			}
+			
+			return atendimento;
+		}
+		return null;
 	}
+		
 	
 	public void addEvento(Evento evento){
 		((LinkedList<Evento>) fila).addLast(evento);

@@ -30,6 +30,7 @@ public class Gerador {
 	
 	public double geradorExponencial(double taxa)
 	{
+		
 		Random rand = new Random();
 		double semente = rand.nextDouble();
 		return -(Math.log(1-semente)/taxa);

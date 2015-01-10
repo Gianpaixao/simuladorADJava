@@ -193,7 +193,7 @@ public class Simulador extends ApplicationFrame{
 					
 					//tempo += 1.0;
 				}
-				
+	
 				pi_0 = t_0/tempo;
 				pi_p = t_p/tempo;
 				

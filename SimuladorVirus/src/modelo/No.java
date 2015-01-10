@@ -5,6 +5,7 @@ public class No
 	private String numeroNo;
 	private String estado;
 	private double t_0 = 0.0, t_p = 0.0, t_r = 0.0,	t_f = 0.0;
+	private double aux =0.0;
 	
 	public No(int numeroNo, String estado)
 	{
@@ -24,6 +25,14 @@ public class No
 		return t_0;
 	}
 
+	public String getNumeroNo() {
+		return numeroNo;
+	}
+	
+	public void setNumeroNo(String numeroNo) {
+		this.numeroNo = numeroNo;
+	}
+	
 	public void setT_0(double t_0) {
 		this.t_0 = t_0;
 	}
@@ -52,5 +61,12 @@ public class No
 		this.t_f = t_f;
 	}
 	
+	public void setAux(double aux) {
+		this.aux = aux;
+	}
+	
+	public double getAux() {
+		return aux;
+	}
 	
 }
