@@ -1,15 +1,19 @@
 package modelo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class No 
 {
-	private String numeroNo;
+	private int numeroNo;
 	private String estado;
 	private double t_0 = 0.0, t_p = 0.0, t_r = 0.0,	t_f = 0.0;
-	private double aux =0.0;
+	private double aux = 0.0;
+	private List<Integer> vizinhos = new ArrayList<Integer>();
 	
 	public No(int numeroNo, String estado)
 	{
-		this.numeroNo = numeroNo+"";
+		this.numeroNo = numeroNo;
 		this.estado = estado;
 	}
 	
@@ -25,11 +29,11 @@ public class No
 		return t_0;
 	}
 
-	public String getNumeroNo() {
+	public int getNumeroNo() {
 		return numeroNo;
 	}
 	
-	public void setNumeroNo(String numeroNo) {
+	public void setNumeroNo(int numeroNo) {
 		this.numeroNo = numeroNo;
 	}
 	
@@ -67,6 +71,14 @@ public class No
 	
 	public double getAux() {
 		return aux;
+	}
+	
+	public void setVizinhos(List<Integer> vizinhos) {
+		this.vizinhos = vizinhos;
+	}
+	
+	public List<Integer> getVizinhos() {
+		return vizinhos;
 	}
 	
 }

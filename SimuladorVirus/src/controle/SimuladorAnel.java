@@ -22,7 +22,7 @@ import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
 	
-public class SimuladorMesh extends ApplicationFrame
+public class SimuladorAnel extends ApplicationFrame
 {
 	private static final long serialVersionUID = 1L;
 	
@@ -35,14 +35,14 @@ public class SimuladorMesh extends ApplicationFrame
 	static double r1, r2, r3, r4, lambda, pi_0, pi_p, pi_r, pi_f, beta;
 	static double media = 0.0, variancia = 0.0, desvio, mediaCv = 0.0, mediaCs = 0.0, confiancaMenor, confiancaMaior;
 	static char estado = '0';
-	static int i, j, k,l, qtde, random, amostra = 10, iteracoes = 50;
+	static int i, j, k,l, qtde, random, amostra = 20, iteracoes = 50;
 	static double t_0 = 0.0, t_p = 0.0, t_r = 0.0, t_f = 0.0, tempo = 0.0,tempoAtual, cv, cs, custo[] = new double[amostra],custoNo[] = new double[amostra],custoAmostra[] = new double[amostra];
 	
 	static BufferedWriter buffWrite;
 	public static Random rand;
 	
 	
-	public SimuladorMesh(XYSeries series, String nomeGrafico, String variavel) {
+	public SimuladorAnel(XYSeries series, String nomeGrafico, String variavel) {
 		super("Grafico de Simulação");  
 		final JFreeChart chart;
 		final XYSeriesCollection data = new XYSeriesCollection(series);  
@@ -172,15 +172,17 @@ public class SimuladorMesh extends ApplicationFrame
 				No no[] = new No[10];
 				int noInfectado = rand.nextInt(10);
 				for(l=0;l<10;l++){
-					if(l==noInfectado) no[l] = new No(l,"p");
+					if(noInfectado>4) no[l] = new No(l,"p");
 					else no[l] = new No(l,"0");
+					noInfectado = rand.nextInt(10);
 				}
+				no[noInfectado] = new No(noInfectado,"p");
 				
 				for(i=0;i<10;i++)
 				{
 					//int indice = (noInfectado+i)%10;
 					
-					agendarEvento(no[i], filaDeEventos);
+					agendarEvento(no[i], filaDeEventos, no);
 				}
 				System.out.println("============================");
 				
@@ -200,27 +202,27 @@ public class SimuladorMesh extends ApplicationFrame
 							case I_P:
 								evento.getNo().setEstado("p");
 								evento.getNo().setT_0(evento.getNo().getAux());
-								agendarEvento(evento.getNo(), filaDeEventos);
+								agendarEvento(evento.getNo(), filaDeEventos, no);
 								break;
 							case P_R:
 								evento.getNo().setEstado("r");
 								evento.getNo().setT_p(evento.getNo().getAux());
-								agendarEvento(evento.getNo(), filaDeEventos);
+								agendarEvento(evento.getNo(), filaDeEventos, no);
 								break;
 							case P_F:
 								evento.getNo().setT_p(evento.getNo().getAux());
 								evento.getNo().setEstado("f");
-								agendarEvento(evento.getNo(), filaDeEventos);
+								agendarEvento(evento.getNo(), filaDeEventos, no);
 								break;
 							case R_I:
 								evento.getNo().setT_r(evento.getNo().getAux());
 								evento.getNo().setEstado("0");
-								agendarEvento(evento.getNo(), filaDeEventos);
+								agendarEvento(evento.getNo(), filaDeEventos, no);
 								break;
 							case F_I:
 								evento.getNo().setT_f(evento.getNo().getAux());
 								evento.getNo().setEstado("0");
-								agendarEvento(evento.getNo(), filaDeEventos);
+								agendarEvento(evento.getNo(), filaDeEventos, no);
 								break;
 							default:
 								System.out.println("Tipo de Evento inválido!");
@@ -230,6 +232,7 @@ public class SimuladorMesh extends ApplicationFrame
 					}
 					
 				}
+
 				System.out.println((evento.getNo().getT_f()+evento.getNo().getT_r()+evento.getNo().getT_p()+evento.getNo().getT_0())/tempoAtual);
 				
 				pi_0 = evento.getNo().getT_0()/tempoAtual;
@@ -317,12 +320,12 @@ public class SimuladorMesh extends ApplicationFrame
 		return var/qtde;
 	}
 	
-	private static void agendarEvento(No no, FilaDeEventos eventos){
+	private static void agendarEvento(No no, FilaDeEventos eventos, No nos[]){
 		random = rand.nextInt(100);
 		double proxEvento = 0.0;
 		switch (no.getEstado()) {
 			case "0":	
-				double taxa = eventos.getNosInfectados()*beta;
+				double taxa = vizinhosInfectados(nos,no.getNumeroNo())*beta;
 				//System.out.println(taxa);
 				if(taxa > 0){
 					proxEvento = gerador.geradorExponencial(taxa);
@@ -375,6 +378,39 @@ public class SimuladorMesh extends ApplicationFrame
 				break;
 		}
 		//System.out.println(proxEvento);
+	}
+	
+	private static int vizinhosInfectados(No no[], int individuo)
+	{
+		int numVizinhos = 0;
+		int anterior, posterior;
+		
+		if(individuo == 0)
+		{
+			anterior = 9;
+			posterior = 1;
+		}
+		else if(individuo == 9)
+		{
+			anterior = 8;
+			posterior = 0;
+		}
+		else
+		{
+			anterior = individuo-1;
+			posterior = individuo+1;
+		}
+		
+		if(!no[anterior].getEstado().equalsIgnoreCase("0"))
+		{
+			numVizinhos++;
+		}
+		else if(!no[posterior].getEstado().equalsIgnoreCase("0"))
+		{
+			numVizinhos++;
+		}
+		
+		return numVizinhos;
 	}
 
 }
