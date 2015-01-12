@@ -127,6 +127,9 @@ public class Simulador extends ApplicationFrame{
 		cv = 10.0;
 		cs = 9.0;
 		
+		double custoOtimo = 1000.0;
+		double r4Otimo = 0.0;
+		
 		for(k=0;k<qtde;k++)
 		{
 			estado = '0';
@@ -206,7 +209,12 @@ public class Simulador extends ApplicationFrame{
 				System.out.println("O custo foi de "+custo[j]);
 			}
 			
-			media = media / j;
+			media = media / amostra;
+			if(media<custoOtimo)
+			{
+				custoOtimo = media;
+				r4Otimo = r4;
+			}
 			buffWrite.append("O custo medio foi de "+ media+"\n");
 			System.out.println("\nO custo medio foi de "+ media);
 			
@@ -261,7 +269,9 @@ public class Simulador extends ApplicationFrame{
 			
 			System.out.println("");
 			
-		}	
+		}
+		
+		System.out.println("\n\nO custo ótimo é "+custoOtimo+" para R4 "+r4Otimo);
 	}
 	
 	private static double intervaloConfianca(double desvio, int n)

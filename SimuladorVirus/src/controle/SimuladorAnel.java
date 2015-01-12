@@ -261,6 +261,7 @@ public class SimuladorAnel extends ApplicationFrame
 			confiancaMenor = media - intervaloConfianca(desvio,amostra);
 			confiancaMaior = media + intervaloConfianca(desvio,amostra);
 			
+			System.out.println("intervalo "+2*intervaloConfianca(desvio,amostra));
 			System.out.println("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")");
 			buffWrite.append("O intervalo de confiança para 95% é: ("+confiancaMenor+" < u < "+confiancaMaior+")\n");
 			
@@ -317,7 +318,7 @@ public class SimuladorAnel extends ApplicationFrame
 			var += (custo[j]-media)*(custo[j]-media);
 		}
 		
-		return var/qtde;
+		return var/(qtde);
 	}
 	
 	private static void agendarEvento(No no, FilaDeEventos eventos, No nos[]){

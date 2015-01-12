@@ -31,14 +31,16 @@ public class SimuladorMesh extends ApplicationFrame
 	final static XYSeries seriesPi0  = new XYSeries ("PI0");
 	final static XYSeries seriesCs  = new XYSeries ("CS");
 	final static XYSeries seriesCv  = new XYSeries ("CV");
+	final static XYSeries seriesCDF  = new XYSeries ("CDF");
 	
 	static double r1, r2, r3, r4, lambda, pi_0, pi_p, pi_r, pi_f, beta;
 	static double media = 0.0, variancia = 0.0, desvio, mediaCv = 0.0, mediaCs = 0.0, confiancaMenor, confiancaMaior;
 	static char estado = '0';
-	static int i, j, k,l, qtde, random, amostra = 10, iteracoes = 50;
-	static double t_0 = 0.0, t_p = 0.0, t_r = 0.0, t_f = 0.0, tempo = 0.0,tempoAtual, cv, cs, custo[] = new double[amostra],custoNo[] = new double[amostra],custoAmostra[] = new double[amostra];
+	static int i, j, k,l, qtde, random, amostra = 10, iteracoes = 80;
+	static double t_0 = 0.0, t_p = 0.0, t_r = 0.0, t_f = 0.0, tempo = 0.0,tempoAtual, cv, cs, custo[] = new double[amostra],custoNo[] = new double[amostra],custoAmostra[] = new double[amostra], tempoCura[] = new double[amostra];
 	
 	static BufferedWriter buffWrite;
+	static BufferedWriter buffWriteCura;
 	public static Random rand;
 	
 	
@@ -71,28 +73,15 @@ public class SimuladorMesh extends ApplicationFrame
 	}
 	
 	public static void main(String[] args) throws IOException{
-		/*FilaDeEventos filaDeEventos = new FilaDeEventos();
-		filaDeEventos.getFila().add(new Evento(2.0,TipoEvento.CURA,new No(1,"0")));
-		filaDeEventos.getFila().add(new Evento(1.0,TipoEvento.CURA,new No(1,"0")));
-		filaDeEventos.getFila().add(new Evento(4.0,TipoEvento.CURA,new No(1,"0")));
-		filaDeEventos.getFila().add(new Evento(3.0,TipoEvento.CURA,new No(1,"0")));
-		
-		for(Evento e : filaDeEventos.getFila()){
-			System.out.println("tempo "+e.getInstanteEvento());
-		}
-		
-		Collections.sort(filaDeEventos.getFila());
-		for(Evento e : filaDeEventos.getFila()){
-			System.out.println("tempo "+e.getInstanteEvento());
-		}
-		System.exit(0);*/
 		buffWrite = new BufferedWriter(new FileWriter("output.txt"));
+		buffWriteCura = new BufferedWriter(new FileWriter("outputCura.txt"));
 		execucao();
+		buffWriteCura.close();
 		buffWrite.close();
 		
 		Scanner s = new Scanner(System.in);
 		while(true){
-			System.out.println("1 - custo\n2 - cv\n3 - cs\n4 - pi0\n5 - sair ");
+			System.out.println("Escolha o número do gráfico a ser gerado:\n1 - custo\n2 - cv\n3 - cs\n4 - pi0\n5 - CDF\n6 - Sair ");
 		    int grafico = s.nextInt();
 
 			switch (grafico) {
@@ -109,6 +98,9 @@ public class SimuladorMesh extends ApplicationFrame
 					plotarGrafico(seriesPi0, "Pi0 x R4", "Pi0");
 					break;
 				case 5:
+					plotarGrafico(seriesCDF, "CDF", "tempo");
+					break;
+				case 6:
 					System.out.println("Fim da simulação2");
 					System.exit(0);
 					break;
@@ -117,19 +109,6 @@ public class SimuladorMesh extends ApplicationFrame
 			}
 			System.out.println("========================================\n");
 		}
-	    
-		/*String[] chartStrings = { "cv", "cs", "pi0", "custo", "pif" };
-
-		JComboBox chartList = new JComboBox(chartStrings);
-		chartList.setSelectedIndex(4);
-		chartList.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JComboBox cb = (JComboBox)e.getSource();
-		        String chartName = (String)cb.getSelectedItem();
-		        if(chartName.equalsIgnoreCase("custo"));
-			}
-		});*/
 	}
 	
 	private static void execucao() throws IOException
@@ -147,17 +126,25 @@ public class SimuladorMesh extends ApplicationFrame
 		cs = 9.0;
 		beta = 0.08;
 		
+		double custoOtimo = 1000.0;
+		double r4Otimo = 0.0;
+		double mediaCuraOtimo = 0.0;
+		
+		
+		// loop para execução da simulação para cada r4
 		for(k=0;k<qtde;k++)
 		{
 			media = 0.0;
 			variancia = 0.0;
 			r4 += (1.0/qtde);
-			
-			
+			double mediaCura = 0.0;
+			double aux[] = new double[amostra];
 			
 			buffWrite.append("============================= r4 = "+r4+"============================\n");
 			
 			System.out.println("\n========================== r4 = "+r4+" ==========================");
+			
+			// Repetição da simulação para o mesmo R4, assim são geradas amostras da simulação com msm dados
 			for(j=0; j<amostra;j++)
 			{
 				t_0 = 0.0;
@@ -167,19 +154,20 @@ public class SimuladorMesh extends ApplicationFrame
 				tempo = 0.0;
 				tempoAtual = 0.0;
 				
+				// Criação da fila de eventos
 				FilaDeEventos filaDeEventos = new FilaDeEventos();
 				filaDeEventos.setNosInfectados(1);
 				No no[] = new No[10];
 				int noInfectado = rand.nextInt(10);
 				for(l=0;l<10;l++){
-					if(l==noInfectado) no[l] = new No(l,"p");
+					noInfectado = rand.nextInt(10);
+					if(l>noInfectado) no[l] = new No(l,"p");
 					else no[l] = new No(l,"0");
 				}
 				
+				// cria os eventos sementes de cada nó
 				for(i=0;i<10;i++)
 				{
-					//int indice = (noInfectado+i)%10;
-					
 					agendarEvento(no[i], filaDeEventos);
 				}
 				System.out.println("============================");
@@ -190,6 +178,8 @@ public class SimuladorMesh extends ApplicationFrame
 				
 				System.out.println("============================");
 				Evento evento = null;
+				
+				// execução do tratamento dos eventos
 				for(i=0;i<iteracoes;i++)
 				{
 					if(filaDeEventos.getEventosNaFila()>0)
@@ -199,6 +189,7 @@ public class SimuladorMesh extends ApplicationFrame
 						switch(evento.getTipo()){
 							case I_P:
 								evento.getNo().setEstado("p");
+								evento.getNo().setTempoInfeccao(tempoAtual);
 								evento.getNo().setT_0(evento.getNo().getAux());
 								agendarEvento(evento.getNo(), filaDeEventos);
 								break;
@@ -215,11 +206,15 @@ public class SimuladorMesh extends ApplicationFrame
 							case R_I:
 								evento.getNo().setT_r(evento.getNo().getAux());
 								evento.getNo().setEstado("0");
+								evento.getNo().setTempoCura(tempoAtual);
+								evento.getNo().calculaMediaCura();
 								agendarEvento(evento.getNo(), filaDeEventos);
 								break;
 							case F_I:
 								evento.getNo().setT_f(evento.getNo().getAux());
 								evento.getNo().setEstado("0");
+								evento.getNo().setTempoCura(tempoAtual);
+								evento.getNo().calculaMediaCura();
 								agendarEvento(evento.getNo(), filaDeEventos);
 								break;
 							default:
@@ -228,9 +223,18 @@ public class SimuladorMesh extends ApplicationFrame
 								break; 
 						}
 					}
-					
 				}
+				
+				// probabilidade total dos PIs
 				System.out.println((evento.getNo().getT_f()+evento.getNo().getT_r()+evento.getNo().getT_p()+evento.getNo().getT_0())/tempoAtual);
+				
+				double cura = 0.0;
+				for(No nos : no)
+				{
+					cura += nos.getMediaCura();
+				}
+				cura = cura/10;
+				mediaCura += cura;
 				
 				pi_0 = evento.getNo().getT_0()/tempoAtual;
 				pi_p = evento.getNo().getT_p()/tempoAtual;
@@ -241,10 +245,21 @@ public class SimuladorMesh extends ApplicationFrame
 				media += custo[j];
 				mediaCv += custoNo[j];
 				mediaCs += custoAmostra[j];
+				aux[j] = cura;
 				System.out.println("O custo foi de "+custo[j]);
 			}
 			
+			mediaCura = mediaCura / amostra;
+			buffWriteCura.append(r4+" ; "+mediaCura+"\n");
+		
 			media = media / j;
+			if(media<custoOtimo)
+			{
+				custoOtimo = media;
+				r4Otimo = r4;
+				mediaCuraOtimo = mediaCura;
+				tempoCura = aux;
+			}
 			buffWrite.append("O custo medio foi de "+ media+"\n");
 			System.out.println("\nO custo medio foi de "+ media);
 			
@@ -300,6 +315,14 @@ public class SimuladorMesh extends ApplicationFrame
 			System.out.println("");
 			
 		}	
+		final double INCREMENTO = 1.0 / amostra;
+        double t = INCREMENTO;
+		for(double d : ord(tempoCura)){
+			seriesCDF.add(d, t);
+			t+=INCREMENTO;
+		}
+		
+		System.out.println("\n\nO custo ótimo é "+custoOtimo+" e o tempo de cura medio é "+mediaCuraOtimo+" para R4 "+r4Otimo);
 	}
 	
 	private static double intervaloConfianca(double desvio, int n)
@@ -323,7 +346,7 @@ public class SimuladorMesh extends ApplicationFrame
 		switch (no.getEstado()) {
 			case "0":	
 				double taxa = eventos.getNosInfectados()*beta;
-				//System.out.println(taxa);
+
 				if(taxa > 0){
 					proxEvento = gerador.geradorExponencial(taxa);
 					tempo =tempoAtual+ proxEvento;
@@ -374,7 +397,25 @@ public class SimuladorMesh extends ApplicationFrame
 				System.exit(0);
 				break;
 		}
-		//System.out.println(proxEvento);
+	}
+	
+	
+	/**
+	 * Metódo para ordenação de vetor de double
+	 * @param a vetor a ser ordenado
+	 */
+	private static double[] ord(double a[]){
+		double aux;
+		for (int x = 0; x < a.length; x++) {
+			   for (int y = x+1; y < a.length; y++) {
+			    if(a[x] < a[y] ){
+			     aux = a[x];
+			     a[x] = a[y];
+			     a[y] = aux;
+			    }
+			   }
+			  }
+		return a;
 	}
 
 }
