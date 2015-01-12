@@ -9,8 +9,43 @@ public class No
 	private String estado;
 	private double t_0 = 0.0, t_p = 0.0, t_r = 0.0,	t_f = 0.0;
 	private double aux = 0.0;
-	private List<Integer> vizinhos = new ArrayList<Integer>();
+	private double tempoInfeccao;
+	private double tempoCura;
+	private double mediaCura;
+	private double qtdeCura = 1;
 	
+	public void calculaMediaCura(){
+		System.out.println(tempoCura+" "+tempoInfeccao);
+		mediaCura += (tempoCura - tempoInfeccao)/qtdeCura;
+		//System.out.println("mediaCura  "+mediaCura);
+	}
+	
+	public double getMediaCura() {
+		return mediaCura;
+	}
+
+	public void setMediaCura(double mediaCura) {
+		this.mediaCura = mediaCura;
+	}
+
+
+
+	public double getTempoInfeccao() {
+		return tempoInfeccao;
+	}
+
+	public void setTempoInfeccao(double tempoInfeccao) {
+		this.tempoInfeccao = tempoInfeccao;
+	}
+
+	public double getTempoCura() {
+		return tempoCura;
+	}
+
+	public void setTempoCura(double tempoCura) {
+		this.tempoCura = tempoCura;
+	}
+
 	public No(int numeroNo, String estado)
 	{
 		this.numeroNo = numeroNo;
@@ -71,14 +106,6 @@ public class No
 	
 	public double getAux() {
 		return aux;
-	}
-	
-	public void setVizinhos(List<Integer> vizinhos) {
-		this.vizinhos = vizinhos;
-	}
-	
-	public List<Integer> getVizinhos() {
-		return vizinhos;
 	}
 	
 }
