@@ -31,12 +31,13 @@ public class SimuladorAnel extends ApplicationFrame
 	final static XYSeries seriesPi0  = new XYSeries ("PI0");
 	final static XYSeries seriesCs  = new XYSeries ("CS");
 	final static XYSeries seriesCv  = new XYSeries ("CV");
+	final static XYSeries seriesCDF  = new XYSeries ("CDF");
 	
 	static double r1, r2, r3, r4, lambda, pi_0, pi_p, pi_r, pi_f, beta;
 	static double media = 0.0, variancia = 0.0, desvio, mediaCv = 0.0, mediaCs = 0.0, confiancaMenor, confiancaMaior;
 	static char estado = '0';
-	static int i, j, k,l, qtde, random, amostra = 20, iteracoes = 50;
-	static double t_0 = 0.0, t_p = 0.0, t_r = 0.0, t_f = 0.0, tempo = 0.0,tempoAtual, cv, cs, custo[] = new double[amostra],custoNo[] = new double[amostra],custoAmostra[] = new double[amostra];
+	static int i, j, k,l, qtde, random, amostra = 200, iteracoes = 80;
+	static double t_0 = 0.0, t_p = 0.0, t_r = 0.0, t_f = 0.0, tempo = 0.0,tempoAtual, cv, cs, custo[] = new double[amostra],custoNo[] = new double[amostra],custoAmostra[] = new double[amostra], tempoCura[] = new double[amostra];
 	
 	static BufferedWriter buffWrite;
 	public static Random rand;
@@ -53,7 +54,7 @@ public class SimuladorAnel extends ApplicationFrame
 	   chartPanel.setPreferredSize(new java.awt.Dimension (500, 270));  
 	   setContentPane(chartPanel);  
 	   
-	   File file = new File("./"+nomeGrafico+".png");
+	   File file = new File("./"+nomeGrafico+"_Anel.png");
        try {
 			ChartUtilities.saveChartAsPNG(file,chart,1920,1080);
 		} catch (IOException e) {
@@ -63,7 +64,7 @@ public class SimuladorAnel extends ApplicationFrame
 	
 	private static void plotarGrafico(XYSeries series, String nomeGrafico, String variavel)
 	{
-		final SimuladorMesh demo = new SimuladorMesh(series, nomeGrafico, variavel);  
+		final SimuladorAnel demo = new SimuladorAnel(series, nomeGrafico, variavel);  
 		demo.pack();  
 		RefineryUtilities.centerFrameOnScreen(demo);  
 		demo.setVisible(true);
@@ -71,28 +72,13 @@ public class SimuladorAnel extends ApplicationFrame
 	}
 	
 	public static void main(String[] args) throws IOException{
-		/*FilaDeEventos filaDeEventos = new FilaDeEventos();
-		filaDeEventos.getFila().add(new Evento(2.0,TipoEvento.CURA,new No(1,"0")));
-		filaDeEventos.getFila().add(new Evento(1.0,TipoEvento.CURA,new No(1,"0")));
-		filaDeEventos.getFila().add(new Evento(4.0,TipoEvento.CURA,new No(1,"0")));
-		filaDeEventos.getFila().add(new Evento(3.0,TipoEvento.CURA,new No(1,"0")));
-		
-		for(Evento e : filaDeEventos.getFila()){
-			System.out.println("tempo "+e.getInstanteEvento());
-		}
-		
-		Collections.sort(filaDeEventos.getFila());
-		for(Evento e : filaDeEventos.getFila()){
-			System.out.println("tempo "+e.getInstanteEvento());
-		}
-		System.exit(0);*/
-		buffWrite = new BufferedWriter(new FileWriter("output.txt"));
+		buffWrite = new BufferedWriter(new FileWriter("outputAnel.txt"));
 		execucao();
 		buffWrite.close();
 		
 		Scanner s = new Scanner(System.in);
 		while(true){
-			System.out.println("1 - custo\n2 - cv\n3 - cs\n4 - pi0\n5 - sair ");
+			System.out.println("Escolha o número do gráfico a ser gerado:\n1 - custo\n2 - cv\n3 - cs\n4 - pi0\n5 - CDF\n6 - Sair ");
 		    int grafico = s.nextInt();
 
 			switch (grafico) {
@@ -109,7 +95,10 @@ public class SimuladorAnel extends ApplicationFrame
 					plotarGrafico(seriesPi0, "Pi0 x R4", "Pi0");
 					break;
 				case 5:
-					System.out.println("Fim da simulação2");
+					plotarGrafico(seriesCDF, "CDF", "tempo");
+					break;
+				case 6:
+					System.out.println("Fim da simulação");
 					System.exit(0);
 					break;
 				default:
@@ -117,19 +106,6 @@ public class SimuladorAnel extends ApplicationFrame
 			}
 			System.out.println("========================================\n");
 		}
-	    
-		/*String[] chartStrings = { "cv", "cs", "pi0", "custo", "pif" };
-
-		JComboBox chartList = new JComboBox(chartStrings);
-		chartList.setSelectedIndex(4);
-		chartList.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				JComboBox cb = (JComboBox)e.getSource();
-		        String chartName = (String)cb.getSelectedItem();
-		        if(chartName.equalsIgnoreCase("custo"));
-			}
-		});*/
 	}
 	
 	private static void execucao() throws IOException
@@ -137,7 +113,7 @@ public class SimuladorAnel extends ApplicationFrame
 		rand = new Random();
 		
 		r4 = 0.0;
-		qtde = 50;
+		qtde = 200;
 		r1 = 2.0;
 		r2 = 0.8;
 		r3 = 3.0;
@@ -147,12 +123,17 @@ public class SimuladorAnel extends ApplicationFrame
 		cs = 9.0;
 		beta = 0.08;
 		
+		double custoOtimo = 1000.0;
+		double r4Otimo = 0.0;
+		double mediaCuraOtimo = 0.0;
+		
 		for(k=0;k<qtde;k++)
 		{
 			media = 0.0;
 			variancia = 0.0;
 			r4 += (1.0/qtde);
-			
+			double mediaCura = 0.0;
+			double aux[] = new double[amostra];
 			
 			
 			buffWrite.append("============================= r4 = "+r4+"============================\n");
@@ -180,15 +161,15 @@ public class SimuladorAnel extends ApplicationFrame
 				
 				for(i=0;i<10;i++)
 				{
-					//int indice = (noInfectado+i)%10;
 					
 					agendarEvento(no[i], filaDeEventos, no);
+					
 				}
 				System.out.println("============================");
 				
-				for(Evento e : filaDeEventos.getFila()){
+				/*for(Evento e : filaDeEventos.getFila()){
 					System.out.println(e.getInstanteEvento()+" - "+e.getNo().getNumeroNo()+" "+e.getTipo());
-				}
+				}*/
 				
 				System.out.println("============================");
 				Evento evento = null;
@@ -201,6 +182,7 @@ public class SimuladorAnel extends ApplicationFrame
 						switch(evento.getTipo()){
 							case I_P:
 								evento.getNo().setEstado("p");
+								evento.getNo().setTempoInfeccao(tempoAtual);
 								evento.getNo().setT_0(evento.getNo().getAux());
 								agendarEvento(evento.getNo(), filaDeEventos, no);
 								break;
@@ -217,11 +199,15 @@ public class SimuladorAnel extends ApplicationFrame
 							case R_I:
 								evento.getNo().setT_r(evento.getNo().getAux());
 								evento.getNo().setEstado("0");
+								evento.getNo().setTempoCura(tempoAtual);
+								evento.getNo().calculaMediaCura();
 								agendarEvento(evento.getNo(), filaDeEventos, no);
 								break;
 							case F_I:
 								evento.getNo().setT_f(evento.getNo().getAux());
 								evento.getNo().setEstado("0");
+								evento.getNo().setTempoCura(tempoAtual);
+								evento.getNo().calculaMediaCura();
 								agendarEvento(evento.getNo(), filaDeEventos, no);
 								break;
 							default:
@@ -232,8 +218,14 @@ public class SimuladorAnel extends ApplicationFrame
 					}
 					
 				}
-
-				System.out.println((evento.getNo().getT_f()+evento.getNo().getT_r()+evento.getNo().getT_p()+evento.getNo().getT_0())/tempoAtual);
+				
+				double cura = 0.0;
+				for(No nos : no)
+				{
+					cura += nos.getMediaCura();
+				}
+				cura = cura/10;
+				mediaCura += cura;
 				
 				pi_0 = evento.getNo().getT_0()/tempoAtual;
 				pi_p = evento.getNo().getT_p()/tempoAtual;
@@ -244,10 +236,19 @@ public class SimuladorAnel extends ApplicationFrame
 				media += custo[j];
 				mediaCv += custoNo[j];
 				mediaCs += custoAmostra[j];
+				aux[j] = cura;
 				System.out.println("O custo foi de "+custo[j]);
 			}
-			
+			mediaCura = mediaCura / amostra;
+					
 			media = media / j;
+			if(media<custoOtimo)
+			{
+				custoOtimo = media;
+				r4Otimo = r4;
+				mediaCuraOtimo = mediaCura;
+				tempoCura = aux;
+			}
 			buffWrite.append("O custo medio foi de "+ media+"\n");
 			System.out.println("\nO custo medio foi de "+ media);
 			
@@ -263,7 +264,7 @@ public class SimuladorAnel extends ApplicationFrame
 			
 			System.out.println("intervalo "+2*intervaloConfianca(desvio,amostra));
 			System.out.println("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")");
-			buffWrite.append("O intervalo de confiança para 95% é: ("+confiancaMenor+" < u < "+confiancaMaior+")\n");
+			buffWrite.append("intervalo de confianca para 95%: "+2*intervaloConfianca(desvio,amostra)+"\n");
 			
 			// variancia, desvio e intervalo de confianca para o custo do no CV
 			
@@ -272,12 +273,12 @@ public class SimuladorAnel extends ApplicationFrame
 			variancia = variancia(custoNo,mediaCv,amostra);
 			desvio = Math.sqrt(variancia);
 			
-			System.out.println("A variancia foi "+variancia+" e o desvio padrão foi de "+desvio);
+			System.out.println("O custo medio de Cv foi de "+ mediaCv);
 			
 			confiancaMenor = mediaCv - intervaloConfianca(desvio,amostra);
 			confiancaMaior = mediaCv + intervaloConfianca(desvio,amostra);
 			
-			buffWrite.append("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")\n");
+			buffWrite.append("intervalo de confianca para 95%: "+2*intervaloConfianca(desvio,amostra)+"\n");
 			System.out.println("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")");
 
 			// variancia, desvio e intervalo de confianca para o custo do no CS
@@ -287,13 +288,13 @@ public class SimuladorAnel extends ApplicationFrame
 			variancia = variancia(custoAmostra,mediaCs,amostra);
 			desvio = Math.sqrt(variancia);
 			
-			System.out.println("A variancia foi "+variancia+" e o desvio padrão foi de "+desvio);
+			System.out.println("O custo medio de Cs foi "+mediaCs);
 			
 			confiancaMenor = mediaCs - intervaloConfianca(desvio,amostra);
 			confiancaMaior = mediaCs + intervaloConfianca(desvio,amostra);
 			
 			System.out.println("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")");
-			buffWrite.append("O intervalo de confiança para 95% é: ("+confiancaMenor+"< u <"+confiancaMaior+")\n");
+			buffWrite.append("intervalo de confianca para 95%: "+2*intervaloConfianca(desvio,amostra)+"\n");
 			
 			series.add(r4, media);
 			seriesPi0.add(r4,pi_0);
@@ -303,7 +304,14 @@ public class SimuladorAnel extends ApplicationFrame
 			
 			System.out.println("");
 			
-		}	
+		}
+		final double INCREMENTO = 1.0 / amostra;
+        double t = INCREMENTO;
+		for(double d : ord(tempoCura)){
+			seriesCDF.add(d, t);
+			t+=INCREMENTO;
+		}
+		System.out.println("\n\nO custo ótimo é "+custoOtimo+" e o tempo de cura medio é "+mediaCuraOtimo+" para R4 "+r4Otimo);
 	}
 	
 	private static double intervaloConfianca(double desvio, int n)
@@ -327,7 +335,6 @@ public class SimuladorAnel extends ApplicationFrame
 		switch (no.getEstado()) {
 			case "0":	
 				double taxa = vizinhosInfectados(nos,no.getNumeroNo())*beta;
-				//System.out.println(taxa);
 				if(taxa > 0){
 					proxEvento = gerador.geradorExponencial(taxa);
 					tempo =tempoAtual+ proxEvento;
@@ -378,7 +385,7 @@ public class SimuladorAnel extends ApplicationFrame
 				System.exit(0);
 				break;
 		}
-		//System.out.println(proxEvento);
+		
 	}
 	
 	private static int vizinhosInfectados(No no[], int individuo)
@@ -413,5 +420,23 @@ public class SimuladorAnel extends ApplicationFrame
 		
 		return numVizinhos;
 	}
-
+	
+	
+	/**
+	 * Metódo para ordenação de vetor de double
+	 * @param a vetor a ser ordenado
+	 */
+	private static double[] ord(double a[]){
+		double aux;
+		for (int x = 0; x < a.length; x++) {
+			   for (int y = x+1; y < a.length; y++) {
+			    if(a[x] > a[y] ){
+			     aux = a[x];
+			     a[x] = a[y];
+			     a[y] = aux;
+			    }
+			   }
+			  }
+		return a;
+	}
 }

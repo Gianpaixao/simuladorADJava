@@ -22,7 +22,7 @@ import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
 	
-public class SimuladorMesh extends ApplicationFrame
+public class SimuladorNoUnico extends ApplicationFrame
 {
 	private static final long serialVersionUID = 1L;
 	
@@ -44,7 +44,7 @@ public class SimuladorMesh extends ApplicationFrame
 	public static Random rand;
 	
 	
-	public SimuladorMesh(XYSeries series, String nomeGrafico, String variavel) {
+	public SimuladorNoUnico(XYSeries series, String nomeGrafico, String variavel) {
 		super("Grafico de Simulação");  
 		final JFreeChart chart;
 		final XYSeriesCollection data = new XYSeriesCollection(series);  
@@ -55,7 +55,7 @@ public class SimuladorMesh extends ApplicationFrame
 	   chartPanel.setPreferredSize(new java.awt.Dimension (500, 270));  
 	   setContentPane(chartPanel);  
 	   
-	   File file = new File("./"+nomeGrafico+"_Mesh.png");
+	   File file = new File("./"+nomeGrafico+"_NoUnico.png");
        try {
 			ChartUtilities.saveChartAsPNG(file,chart,1920,1080);
 		} catch (IOException e) {
@@ -65,7 +65,7 @@ public class SimuladorMesh extends ApplicationFrame
 	
 	private static void plotarGrafico(XYSeries series, String nomeGrafico, String variavel)
 	{
-		final SimuladorMesh demo = new SimuladorMesh(series, nomeGrafico, variavel);  
+		final SimuladorNoUnico demo = new SimuladorNoUnico(series, nomeGrafico, variavel);  
 		demo.pack();  
 		RefineryUtilities.centerFrameOnScreen(demo);  
 		demo.setVisible(true);
@@ -73,7 +73,7 @@ public class SimuladorMesh extends ApplicationFrame
 	}
 	
 	public static void main(String[] args) throws IOException{
-		buffWrite = new BufferedWriter(new FileWriter("outputMesh.txt"));
+		buffWrite = new BufferedWriter(new FileWriter("outputNo.txt"));
 		buffWriteCura = new BufferedWriter(new FileWriter("outputCura.txt"));
 		execucao();
 		buffWriteCura.close();
@@ -124,7 +124,7 @@ public class SimuladorMesh extends ApplicationFrame
 		lambda = 1.0/8640;
 		cv = 10.0;
 		cs = 9.0;
-		beta = 0.08;
+		//beta = 0.08;
 		
 		double custoOtimo = 1000.0;
 		double r4Otimo = 0.0;
@@ -157,16 +157,12 @@ public class SimuladorMesh extends ApplicationFrame
 				// Criação da fila de eventos
 				FilaDeEventos filaDeEventos = new FilaDeEventos();
 				filaDeEventos.setNosInfectados(1);
-				No no[] = new No[10];
-				int noInfectado = rand.nextInt(10);
-				for(l=0;l<10;l++){
-					noInfectado = rand.nextInt(10);
-					if(l>noInfectado) no[l] = new No(l,"p");
-					else no[l] = new No(l,"0");
-				}
+				No no[] = new No[1];
+				no[0] = new No(0, "0");
+				
 				
 				// cria os eventos sementes de cada nó
-				for(i=0;i<10;i++)
+				for(i=0;i<1;i++)
 				{
 					agendarEvento(no[i], filaDeEventos);
 				}
@@ -233,7 +229,7 @@ public class SimuladorMesh extends ApplicationFrame
 				{
 					cura += nos.getMediaCura();
 				}
-				cura = cura/10;
+				cura = cura/1;
 				mediaCura += cura;
 				
 				pi_0 = evento.getNo().getT_0()/tempoAtual;
@@ -345,7 +341,7 @@ public class SimuladorMesh extends ApplicationFrame
 		double proxEvento = 0.0;
 		switch (no.getEstado()) {
 			case "0":	
-				double taxa = eventos.getNosInfectados()*beta;
+				double taxa = r2;
 
 				if(taxa > 0){
 					proxEvento = gerador.geradorExponencial(taxa);

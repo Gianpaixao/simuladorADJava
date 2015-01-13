@@ -1,7 +1,5 @@
 package modelo;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class No 
 {
@@ -15,13 +13,13 @@ public class No
 	private double qtdeCura = 1;
 	
 	public void calculaMediaCura(){
-		System.out.println(tempoCura+" "+tempoInfeccao);
-		mediaCura += (tempoCura - tempoInfeccao)/qtdeCura;
+		mediaCura += (tempoCura - tempoInfeccao);
+		qtdeCura++;
 		//System.out.println("mediaCura  "+mediaCura);
 	}
 	
 	public double getMediaCura() {
-		return mediaCura;
+		return mediaCura/qtdeCura;
 	}
 
 	public void setMediaCura(double mediaCura) {
