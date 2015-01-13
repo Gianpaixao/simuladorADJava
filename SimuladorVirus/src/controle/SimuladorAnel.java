@@ -311,6 +311,7 @@ public class SimuladorAnel extends ApplicationFrame
 			seriesCDF.add(d, t);
 			t+=INCREMENTO;
 		}
+		buffWrite.append("\n\nO custo ótimo é "+custoOtimo+" e o tempo de cura medio é "+mediaCuraOtimo+" para R4 "+r4Otimo);
 		System.out.println("\n\nO custo ótimo é "+custoOtimo+" e o tempo de cura medio é "+mediaCuraOtimo+" para R4 "+r4Otimo);
 	}
 	

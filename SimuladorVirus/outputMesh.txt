@@ -1,0 +1,1403 @@
+============================= r4 = 0.005============================
+O custo medio foi de 9.766011941504825
+intervalo de confianca para 95%: 0.07655304733698379
+O custo medio de Cv foi de 9.721103349396705
+intervalo de confianca para 95%: 0.07654980323214115
+O custo medio de Cs foi 0.04490859210811496
+intervalo de confianca para 95%: 2.1011856337796913E-5
+============================= r4 = 0.01============================
+O custo medio foi de 9.615457039115418
+intervalo de confianca para 95%: 0.11828806443975659
+O custo medio de Cv foi de 9.574410261506227
+intervalo de confianca para 95%: 0.1190274591092049
+O custo medio de Cs foi 0.08987683731672083
+intervalo de confianca para 95%: 1.1575769084233447E-4
+============================= r4 = 0.015============================
+O custo medio foi de 9.434577047461755
+intervalo de confianca para 95%: 0.15585254807073737
+O custo medio de Cv foi de 9.348217234785416
+intervalo de confianca para 95%: 0.15639514268254692
+O custo medio de Cs foi 0.1346812481704527
+intervalo de confianca para 95%: 1.9840102545837885E-4
+============================= r4 = 0.02============================
+O custo medio foi de 9.184210302071266
+intervalo de confianca para 95%: 0.20065437366136557
+O custo medio de Cv foi de 9.052268501602828
+intervalo de confianca para 95%: 0.2009776857718705
+O custo medio de Cs foi 0.1793562928832218
+intervalo de confianca para 95%: 3.71238328111629E-4
+============================= r4 = 0.025============================
+O custo medio foi de 8.927029351484826
+intervalo de confianca para 95%: 0.27951402988663204
+O custo medio de Cv foi de 8.749068180690072
+intervalo de confianca para 95%: 0.27971735158094874
+O custo medio de Cs foi 0.22411929476718878
+intervalo de confianca para 95%: 4.7372710821140995E-4
+============================= r4 = 0.030000000000000002============================
+O custo medio foi de 8.958803285484562
+intervalo de confianca para 95%: 0.33806935661674004
+O custo medio de Cv foi de 8.734977843418656
+intervalo de confianca para 95%: 0.3382438966682863
+O custo medio de Cs foi 0.26869137944319343
+intervalo de confianca para 95%: 6.504564526313468E-4
+============================= r4 = 0.035============================
+O custo medio foi de 8.512708717663651
+intervalo de confianca para 95%: 0.45846901623960745
+O custo medio de Cv foi de 8.244471666515683
+intervalo de confianca para 95%: 0.4586006701099899
+O custo medio de Cs foi 0.31325539726227697
+intervalo de confianca para 95%: 8.296707993433647E-4
+============================= r4 = 0.04============================
+O custo medio foi de 8.193400477279683
+intervalo de confianca para 95%: 0.5200100942247816
+O custo medio de Cv foi de 7.877688670101285
+intervalo de confianca para 95%: 0.5201660889617219
+O custo medio de Cs foi 0.35850044249728213
+intervalo de confianca para 95%: 8.120456407288994E-4
+============================= r4 = 0.045============================
+O custo medio foi de 8.138409788800562
+intervalo de confianca para 95%: 0.5301104839662731
+O custo medio de Cv foi de 7.77689335901803
+intervalo de confianca para 95%: 0.5302025405855705
+O custo medio de Cs foi 0.4026973753455199
+intervalo de confianca para 95%: 0.001064559664775179
+============================= r4 = 0.049999999999999996============================
+O custo medio foi de 7.647721153854031
+intervalo de confianca para 95%: 0.6335270941928907
+O custo medio de Cv foi de 7.241464699435206
+intervalo de confianca para 95%: 0.6336518587884272
+O custo medio de Cs foi 0.447154408090641
+intervalo de confianca para 95%: 0.0012662351691850645
+============================= r4 = 0.05499999999999999============================
+O custo medio foi de 7.642181880412371
+intervalo de confianca para 95%: 0.6384669759592206
+O custo medio de Cv foi de 7.1884690672387395
+intervalo de confianca para 95%: 0.6386098364912965
+O custo medio de Cs foi 0.49215590871125825
+intervalo de confianca para 95%: 0.0015459288126120215
+============================= r4 = 0.05999999999999999============================
+O custo medio foi de 7.2199732573495625
+intervalo de confianca para 95%: 0.6784779204567833
+O custo medio de Cv foi de 6.722622742670374
+intervalo de confianca para 95%: 0.6786763225653452
+O custo medio de Cs foi 0.5357536395589331
+intervalo de confianca para 95%: 0.0017877063392445368
+============================= r4 = 0.06499999999999999============================
+O custo medio foi de 6.8925903622677005
+intervalo de confianca para 95%: 0.730252185455826
+O custo medio de Cv foi de 6.3479821659633675
+intervalo de confianca para 95%: 0.7307134042497919
+O custo medio de Cs foi 0.580900078215478
+intervalo de confianca para 95%: 0.0019903645235261236
+============================= r4 = 0.06999999999999999============================
+O custo medio foi de 6.894464397310337
+intervalo de confianca para 95%: 0.6528678952341562
+O custo medio de Cv foi de 6.302536808982901
+intervalo de confianca para 95%: 0.6530939796153677
+O custo medio de Cs foi 0.6265719995483346
+intervalo de confianca para 95%: 0.0017862283417317425
+============================= r4 = 0.075============================
+O custo medio foi de 6.897904686555271
+intervalo de confianca para 95%: 0.7857402989163921
+O custo medio de Cv foi de 6.262055656141761
+intervalo de confianca para 95%: 0.7860383248582409
+O custo medio de Cs foi 0.6704945744561662
+intervalo de confianca para 95%: 0.002027750485467265
+============================= r4 = 0.08============================
+O custo medio foi de 6.774479906062186
+intervalo de confianca para 95%: 0.7513327465738743
+O custo medio de Cv foi de 6.094282962657969
+intervalo de confianca para 95%: 0.7515951455863723
+O custo medio de Cs foi 0.7148596945572149
+intervalo de confianca para 95%: 0.0023010326794421707
+============================= r4 = 0.085============================
+O custo medio foi de 6.377024845428684
+intervalo de confianca para 95%: 0.7365562594206898
+O custo medio de Cv foi de 5.65295858066545
+intervalo de confianca para 95%: 0.7369830015599758
+O custo medio de Cs foi 0.7581119780493139
+intervalo de confianca para 95%: 0.002935735674357251
+============================= r4 = 0.09000000000000001============================
+O custo medio foi de 6.223889819460334
+intervalo de confianca para 95%: 0.7253636448131106
+O custo medio de Cv foi de 5.453061873144817
+intervalo de confianca para 95%: 0.7262045801035523
+O custo medio de Cs foi 0.8028832991090883
+intervalo de confianca para 95%: 0.0032040291630542487
+============================= r4 = 0.09500000000000001============================
+O custo medio foi de 6.075055454741988
+intervalo de confianca para 95%: 0.7998345486908953
+O custo medio de Cv foi de 5.25729923326628
+intervalo de confianca para 95%: 0.8001735709680142
+O custo medio de Cs foi 0.8490359473369812
+intervalo de confianca para 95%: 0.002903964032848812
+============================= r4 = 0.10000000000000002============================
+O custo medio foi de 5.999901779443036
+intervalo de confianca para 95%: 0.7843514967121711
+O custo medio de Cv foi de 5.137511517178402
+intervalo de confianca para 95%: 0.784856815545252
+O custo medio de Cs foi 0.8929219381676472
+intervalo de confianca para 95%: 0.0033950348363766866
+============================= r4 = 0.10500000000000002============================
+O custo medio foi de 5.990793499149009
+intervalo de confianca para 95%: 0.8201605175634237
+O custo medio de Cv foi de 5.082713170288541
+intervalo de confianca para 95%: 0.8203748620844293
+O custo medio de Cs foi 0.938232496137198
+intervalo de confianca para 95%: 0.003361814923529843
+============================= r4 = 0.11000000000000003============================
+O custo medio foi de 5.651789384013048
+intervalo de confianca para 95%: 0.6962334189232959
+O custo medio de Cv foi de 4.699942172648295
+intervalo de confianca para 95%: 0.6969030448372506
+O custo medio de Cs foi 0.9819519396968794
+intervalo de confianca para 95%: 0.0036415676128365056
+============================= r4 = 0.11500000000000003============================
+O custo medio foi de 5.157487344155161
+intervalo de confianca para 95%: 0.7659428739517865
+O custo medio de Cv foi de 4.157721210708994
+intervalo de confianca para 95%: 0.7663790606024716
+O custo medio de Cs foi 1.0281756040078969
+intervalo de confianca para 95%: 0.004005856737187396
+============================= r4 = 0.12000000000000004============================
+O custo medio foi de 5.336029776853523
+intervalo de confianca para 95%: 0.7369743339750325
+O custo medio de Cv foi de 4.290940328316875
+intervalo de confianca para 95%: 0.7375970067316832
+O custo medio de Cs foi 1.0710189326102337
+intervalo de confianca para 95%: 0.004234882700545282
+============================= r4 = 0.12500000000000003============================
+O custo medio foi de 5.632245268237253
+intervalo de confianca para 95%: 0.7812163796134112
+O custo medio de Cv foi de 4.5439525459516945
+intervalo de confianca para 95%: 0.7821271211949288
+O custo medio de Cs foi 1.1151025185902006
+intervalo de confianca para 95%: 0.00484465797787357
+============================= r4 = 0.13000000000000003============================
+O custo medio foi de 5.418585273201658
+intervalo de confianca para 95%: 0.8315716095794254
+O custo medio de Cv foi de 4.287953667566583
+intervalo de confianca para 95%: 0.8321041599977135
+O custo medio de Cs foi 1.158926880957785
+intervalo de confianca para 95%: 0.005268194089208558
+============================= r4 = 0.13500000000000004============================
+O custo medio foi de 5.00967887426797
+intervalo de confianca para 95%: 0.7830806274919362
+O custo medio de Cv foi de 3.831408958207046
+intervalo de confianca para 95%: 0.7838120505546226
+O custo medio de Cs foi 1.2055043188035486
+intervalo de confianca para 95%: 0.004380994257326651
+============================= r4 = 0.14000000000000004============================
+O custo medio foi de 5.224260882107257
+intervalo de confianca para 95%: 0.7785201378816047
+O custo medio de Cv foi de 4.000822709682728
+intervalo de confianca para 95%: 0.7796410678590128
+O custo medio de Cs foi 1.2486227388095843
+intervalo de confianca para 95%: 0.004600027720276811
+============================= r4 = 0.14500000000000005============================
+O custo medio foi de 4.875063337774069
+intervalo de confianca para 95%: 0.7715403699200626
+O custo medio de Cv foi de 3.6067149094267172
+intervalo de confianca para 95%: 0.7723255283475338
+O custo medio de Cs foi 1.2945956555898142
+intervalo de confianca para 95%: 0.004581031292669278
+============================= r4 = 0.15000000000000005============================
+O custo medio foi de 5.020355511938508
+intervalo de confianca para 95%: 0.7167126885120652
+O custo medio de Cv foi de 3.7059644133427048
+intervalo de confianca para 95%: 0.7170997365417483
+O custo medio de Cs foi 1.3388976514208872
+intervalo de confianca para 95%: 0.0052402570536338395
+============================= r4 = 0.15500000000000005============================
+O custo medio foi de 4.953549799900867
+intervalo de confianca para 95%: 0.7515577690039047
+O custo medio de Cv foi de 3.595942626562788
+intervalo de confianca para 95%: 0.753342635237365
+O custo medio de Cs foi 1.3828314836618951
+intervalo de confianca para 95%: 0.005473808983325107
+============================= r4 = 0.16000000000000006============================
+O custo medio foi de 4.6582194854739
+intervalo de confianca para 95%: 0.7273844474944762
+O custo medio de Cv foi de 3.253042648496776
+intervalo de confianca para 95%: 0.7288912535958141
+O custo medio de Cs foi 1.4300707075282464
+intervalo de confianca para 95%: 0.005155226275929924
+============================= r4 = 0.16500000000000006============================
+O custo medio foi de 4.620664853267882
+intervalo de confianca para 95%: 0.6824320672199922
+O custo medio de Cv foi de 3.1732237300292794
+intervalo de confianca para 95%: 0.6843673094192512
+O custo medio de Cs foi 1.4708566900187214
+intervalo de confianca para 95%: 0.0063977766504734945
+============================= r4 = 0.17000000000000007============================
+O custo medio foi de 4.949892386802595
+intervalo de confianca para 95%: 0.7087154445837329
+O custo medio de Cv foi de 3.457809756013321
+intervalo de confianca para 95%: 0.7105998223612116
+O custo medio de Cs foi 1.5153030328895147
+intervalo de confianca para 95%: 0.006409572553053771
+============================= r4 = 0.17500000000000007============================
+O custo medio foi de 4.6497894357667535
+intervalo de confianca para 95%: 0.6488191272381442
+O custo medio de Cv foi de 3.1127315833809472
+intervalo de confianca para 95%: 0.6504009632016146
+O custo medio de Cs foi 1.5619234163303193
+intervalo de confianca para 95%: 0.006253539098746184
+============================= r4 = 0.18000000000000008============================
+O custo medio foi de 4.589777814900011
+intervalo de confianca para 95%: 0.6582137753068787
+O custo medio de Cv foi de 3.0069543376373224
+intervalo de confianca para 95%: 0.6595249452317611
+O custo medio de Cs foi 1.606196752261242
+intervalo de confianca para 95%: 0.00557198429301831
+============================= r4 = 0.18500000000000008============================
+O custo medio foi de 4.369738458978054
+intervalo de confianca para 95%: 0.61496304120805
+O custo medio de Cv foi de 2.74040177144812
+intervalo de confianca para 95%: 0.6171858020874083
+O custo medio de Cs foi 1.6524024429794253
+intervalo de confianca para 95%: 0.006786448285696995
+============================= r4 = 0.19000000000000009============================
+O custo medio foi de 4.673292666087724
+intervalo de confianca para 95%: 0.6868431418217199
+O custo medio de Cv foi de 3.0001106088603287
+intervalo de confianca para 95%: 0.6890605193757048
+O custo medio de Cs foi 1.6951460782995338
+intervalo de confianca para 95%: 0.0073888805174516506
+============================= r4 = 0.1950000000000001============================
+O custo medio foi de 4.343410932912491
+intervalo de confianca para 95%: 0.6109877944851133
+O custo medio de Cv foi de 2.625810447455082
+intervalo de confianca para 95%: 0.6121213713675079
+O custo medio de Cs foi 1.7410767688932065
+intervalo de confianca para 95%: 0.007087419173585373
+============================= r4 = 0.2000000000000001============================
+O custo medio foi de 4.7988383733914945
+intervalo de confianca para 95%: 0.7282431580392814
+O custo medio de Cv foi de 3.0335627658780417
+intervalo de confianca para 95%: 0.7293342454910345
+O custo medio de Cs foi 1.7871100435951934
+intervalo de confianca para 95%: 0.006919794696567586
+============================= r4 = 0.2050000000000001============================
+O custo medio foi de 4.476410301008764
+intervalo de confianca para 95%: 0.6628552927003041
+O custo medio de Cv foi de 2.673205232644344
+intervalo de confianca para 95%: 0.6644007730572239
+O custo medio de Cs foi 1.827308432411788
+intervalo de confianca para 95%: 0.008598217964966182
+============================= r4 = 0.2100000000000001============================
+O custo medio foi de 4.566493547345201
+intervalo de confianca para 95%: 0.6349441512905445
+O custo medio de Cv foi de 2.7150261667574718
+intervalo de confianca para 95%: 0.6372238085248891
+O custo medio de Cs foi 1.8739699489130093
+intervalo de confianca para 95%: 0.008013561040021202
+============================= r4 = 0.2150000000000001============================
+O custo medio foi de 4.411761852915383
+intervalo de confianca para 95%: 0.5897853137543891
+O custo medio de Cv foi de 2.516463457000263
+intervalo de confianca para 95%: 0.5916361341904995
+O custo medio de Cs foi 1.9182433764934772
+intervalo de confianca para 95%: 0.007849168169966721
+============================= r4 = 0.2200000000000001============================
+O custo medio foi de 4.424594442711653
+intervalo de confianca para 95%: 0.6400265707225016
+O custo medio de Cv foi de 2.4844162694831375
+intervalo de confianca para 95%: 0.6415714350997083
+O custo medio de Cs foi 1.962351707395983
+intervalo de confianca para 95%: 0.008956518816082016
+============================= r4 = 0.22500000000000012============================
+O custo medio foi de 4.103631742510405
+intervalo de confianca para 95%: 0.5209264759501017
+O custo medio de Cv foi de 2.1186372298029266
+intervalo de confianca para 95%: 0.5234441679826518
+O custo medio de Cs foi 2.007228352591872
+intervalo de confianca para 95%: 0.008664969122817296
+============================= r4 = 0.23000000000000012============================
+O custo medio foi de 4.203058519863705
+intervalo de confianca para 95%: 0.5745204415576224
+O custo medio de Cv foi de 2.1697325894286
+intervalo de confianca para 95%: 0.5767560654452343
+O custo medio de Cs foi 2.0539552583470773
+intervalo de confianca para 95%: 0.00824656445504742
+============================= r4 = 0.23500000000000013============================
+O custo medio foi de 4.505237351535261
+intervalo de confianca para 95%: 0.5577955196726472
+O custo medio de Cv foi de 2.4356821821434393
+intervalo de confianca para 95%: 0.5596105136942489
+O custo medio de Cs foi 2.0906736086306976
+intervalo de confianca para 95%: 0.010979801917778469
+============================= r4 = 0.24000000000000013============================
+O custo medio foi de 4.624437165400813
+intervalo de confianca para 95%: 0.595499360765539
+O custo medio de Cv foi de 2.505590468409438
+intervalo de confianca para 95%: 0.5980769690005944
+O custo medio de Cs foi 2.141478475945245
+intervalo de confianca para 95%: 0.009312846660632586
+============================= r4 = 0.24500000000000013============================
+O custo medio foi de 4.184689713566018
+intervalo de confianca para 95%: 0.48948673588168384
+O custo medio de Cv foi de 2.0227992910042794
+intervalo de confianca para 95%: 0.4934448075739485
+O custo medio de Cs foi 2.1851257672835125
+intervalo de confianca para 95%: 0.009772667214130264
+============================= r4 = 0.2500000000000001============================
+O custo medio foi de 4.4386427998200455
+intervalo de confianca para 95%: 0.6404533467942087
+O custo medio de Cv foi de 2.2262173578305497
+intervalo de confianca para 95%: 0.6429087028563456
+O custo medio de Cs foi 2.2334650672809353
+intervalo de confianca para 95%: 0.009546046687211268
+============================= r4 = 0.2550000000000001============================
+O custo medio foi de 4.318959380450426
+intervalo de confianca para 95%: 0.531501416240572
+O custo medio de Cv foi de 2.0629574085945883
+intervalo de confianca para 95%: 0.5330021630253161
+O custo medio de Cs foi 2.2783003839813945
+intervalo de confianca para 95%: 0.008942148557437937
+============================= r4 = 0.2600000000000001============================
+O custo medio foi de 4.379868796759434
+intervalo de confianca para 95%: 0.5086866359013921
+O custo medio de Cv foi de 2.0840035252642695
+intervalo de confianca para 95%: 0.5099122547107674
+O custo medio de Cs foi 2.31757156045804
+intervalo de confianca para 95%: 0.011521515214379805
+============================= r4 = 0.2650000000000001============================
+O custo medio foi de 4.339909508781082
+intervalo de confianca para 95%: 0.5235025091377813
+O custo medio de Cv foi de 1.9982741361494336
+intervalo de confianca para 95%: 0.5260629245158116
+O custo medio de Cs foi 2.363643248060258
+intervalo de confianca para 95%: 0.010067495070425012
+============================= r4 = 0.27000000000000013============================
+O custo medio foi de 4.413711205461885
+intervalo de confianca para 95%: 0.4981276405363532
+O custo medio de Cv foi de 2.0254022780390755
+intervalo de confianca para 95%: 0.5018544344830345
+O custo medio de Cs foi 2.4101185143438575
+intervalo de confianca para 95%: 0.012455838384731972
+============================= r4 = 0.27500000000000013============================
+O custo medio foi de 4.290747866411909
+intervalo de confianca para 95%: 0.46155946488719285
+O custo medio de Cv foi de 1.855240879743435
+intervalo de confianca para 95%: 0.4643828589037326
+O custo medio de Cs foi 2.4576845906303886
+intervalo de confianca para 95%: 0.010081631057831867
+============================= r4 = 0.28000000000000014============================
+O custo medio foi de 4.435158720748491
+intervalo de confianca para 95%: 0.4869783138611494
+O custo medio de Cv foi de 1.959566201198062
+intervalo de confianca para 95%: 0.4886513654103791
+O custo medio de Cs foi 2.4971571469022966
+intervalo de confianca para 95%: 0.009721281378327501
+============================= r4 = 0.28500000000000014============================
+O custo medio foi de 4.514083350701324
+intervalo de confianca para 95%: 0.583078183295451
+O custo medio de Cv foi de 1.9923804113524741
+intervalo de confianca para 95%: 0.5867904078699375
+O custo medio de Cs foi 2.543986556089352
+intervalo de confianca para 95%: 0.010278938417743714
+============================= r4 = 0.29000000000000015============================
+O custo medio foi de 4.5612719415828
+intervalo de confianca para 95%: 0.5751009084957794
+O custo medio de Cv foi de 1.9974403164463046
+intervalo de confianca para 95%: 0.5780943047163805
+O custo medio de Cs foi 2.5865134599737076
+intervalo de confianca para 95%: 0.012491156232401667
+============================= r4 = 0.29500000000000015============================
+O custo medio foi de 4.755505007439741
+intervalo de confianca para 95%: 0.5868942230112858
+O custo medio de Cv foi de 2.1474186716748322
+intervalo de confianca para 95%: 0.5881284625383844
+O custo medio de Cs foi 2.6310061046470077
+intervalo de confianca para 95%: 0.010959334719345733
+============================= r4 = 0.30000000000000016============================
+O custo medio foi de 4.234817010302518
+intervalo de confianca para 95%: 0.4503649862166014
+O custo medio de Cv foi de 1.5797779230604383
+intervalo de confianca para 95%: 0.45298973254488817
+O custo medio de Cs foi 2.6789312111236887
+intervalo de confianca para 95%: 0.010413802015560388
+============================= r4 = 0.30500000000000016============================
+O custo medio foi de 4.415412909066143
+intervalo de confianca para 95%: 0.45082637777706597
+O custo medio de Cv foi de 1.7133697305022124
+intervalo de confianca para 95%: 0.45460312379988804
+O custo medio de Cs foi 2.7233367242348523
+intervalo de confianca para 95%: 0.012274483807595054
+============================= r4 = 0.31000000000000016============================
+O custo medio foi de 4.600664004384743
+intervalo de confianca para 95%: 0.4978376840890773
+O custo medio de Cv foi de 1.8570489684199978
+intervalo de confianca para 95%: 0.5019642679476798
+O custo medio de Cs foi 2.765798568238431
+intervalo de confianca para 95%: 0.014790487950261635
+============================= r4 = 0.31500000000000017============================
+O custo medio foi de 4.333525323046364
+intervalo de confianca para 95%: 0.41567120112078004
+O custo medio de Cv foi de 1.546205769474754
+intervalo de confianca para 95%: 0.42039715806061306
+O custo medio de Cs foi 2.8104337912549022
+intervalo de confianca para 95%: 0.013488201265519213
+============================= r4 = 0.3200000000000002============================
+O custo medio foi de 4.397193450773856
+intervalo de confianca para 95%: 0.4676875972487349
+O custo medio de Cv foi de 1.5655381471007415
+intervalo de confianca para 95%: 0.47218235217951754
+O custo medio de Cs foi 2.8534385014767607
+intervalo de confianca para 95%: 0.014688190136576228
+============================= r4 = 0.3250000000000002============================
+O custo medio foi de 4.571580888064818
+intervalo de confianca para 95%: 0.47100251886983757
+O custo medio de Cv foi de 1.6908767101167488
+intervalo de confianca para 95%: 0.4739052579266292
+O custo medio de Cs foi 2.9027990611909558
+intervalo de confianca para 95%: 0.011738383064213447
+============================= r4 = 0.3300000000000002============================
+O custo medio foi de 4.513589780695366
+intervalo de confianca para 95%: 0.4066786421203393
+O custo medio de Cv foi de 1.5906112224025863
+intervalo de confianca para 95%: 0.4105775566615728
+O custo medio de Cs foi 2.9459469371493143
+intervalo de confianca para 95%: 0.011420834042817164
+============================= r4 = 0.3350000000000002============================
+O custo medio foi de 4.626763316684991
+intervalo de confianca para 95%: 0.49419442849981354
+O custo medio de Cv foi de 1.6581980505904967
+intervalo de confianca para 95%: 0.495852597395963
+O custo medio de Cs foi 2.991248056892254
+intervalo de confianca para 95%: 0.01331095679906225
+============================= r4 = 0.3400000000000002============================
+O custo medio foi de 4.828086280377193
+intervalo de confianca para 95%: 0.4863923152016593
+O custo medio de Cv foi de 1.819570719763266
+intervalo de confianca para 95%: 0.4903798156738695
+O custo medio de Cs foi 3.0317627911513374
+intervalo de confianca para 95%: 0.015018145748470324
+============================= r4 = 0.3450000000000002============================
+O custo medio foi de 4.735437915811974
+intervalo de confianca para 95%: 0.4632398962763842
+O custo medio de Cv foi de 1.6860284520817512
+intervalo de confianca para 95%: 0.46854778015006177
+O custo medio de Cs foi 3.0736661312847957
+intervalo de confianca para 95%: 0.015839122546746284
+============================= r4 = 0.3500000000000002============================
+O custo medio foi de 4.514233437424957
+intervalo de confianca para 95%: 0.40981439218711135
+O custo medio de Cv foi de 1.4131266430929939
+intervalo de confianca para 95%: 0.41323109563151117
+O custo medio de Cs foi 3.1249052672487934
+intervalo de confianca para 95%: 0.012531830814112329
+============================= r4 = 0.3550000000000002============================
+O custo medio foi de 4.72173941927042
+intervalo de confianca para 95%: 0.457096650416259
+O custo medio de Cv foi de 1.5784101014069585
+intervalo de confianca para 95%: 0.4599035845115375
+O custo medio de Cs foi 3.166019477415172
+intervalo de confianca para 95%: 0.014785026285584769
+============================= r4 = 0.3600000000000002============================
+O custo medio foi de 4.769178828839229
+intervalo de confianca para 95%: 0.49970532139656604
+O custo medio de Cv foi de 1.5812377364165626
+intervalo de confianca para 95%: 0.5049670335110623
+O custo medio de Cs foi 3.211663240316777
+intervalo de confianca para 95%: 0.01400631058615512
+============================= r4 = 0.3650000000000002============================
+O custo medio foi de 4.6570951660950435
+intervalo de confianca para 95%: 0.4313786707167778
+O custo medio de Cv foi de 1.4264338138245898
+intervalo de confianca para 95%: 0.4365138382077985
+O custo medio de Cs foi 3.254625857154119
+intervalo de confianca para 95%: 0.016574681812748446
+============================= r4 = 0.3700000000000002============================
+O custo medio foi de 4.585886817398835
+intervalo de confianca para 95%: 0.4096472261228352
+O custo medio de Cv foi de 1.3068124316067466
+intervalo de confianca para 95%: 0.41307612761836765
+O custo medio de Cs foi 3.302479684146982
+intervalo de confianca para 95%: 0.014842983337892903
+============================= r4 = 0.3750000000000002============================
+O custo medio foi de 4.720708598502972
+intervalo de confianca para 95%: 0.3796980270885709
+O custo medio de Cv foi de 1.4002167680734383
+intervalo de confianca para 95%: 0.3842394625756226
+O custo medio de Cs foi 3.343538291008303
+intervalo de confianca para 95%: 0.016919957205069634
+============================= r4 = 0.3800000000000002============================
+O custo medio foi de 4.8499300915869235
+intervalo de confianca para 95%: 0.3556092139559182
+O custo medio de Cv foi de 1.4804613485208504
+intervalo de confianca para 95%: 0.35972851058571886
+O custo medio de Cs foi 3.3931875183614775
+intervalo de confianca para 95%: 0.014273189141564065
+============================= r4 = 0.38500000000000023============================
+O custo medio foi de 4.782543087195815
+intervalo de confianca para 95%: 0.3637076132584056
+O custo medio de Cv foi de 1.3636993917496878
+intervalo de confianca para 95%: 0.36538664370391344
+O custo medio de Cs foi 3.443211939780546
+intervalo de confianca para 95%: 0.011831567612283319
+============================= r4 = 0.39000000000000024============================
+O custo medio foi de 4.837144919314887
+intervalo de confianca para 95%: 0.41142917022482267
+O custo medio de Cv foi de 1.3797576323185938
+intervalo de confianca para 95%: 0.41523701292713755
+O custo medio de Cs foi 3.481421843653946
+intervalo de confianca para 95%: 0.014727276355234261
+============================= r4 = 0.39500000000000024============================
+O custo medio foi de 4.844294119980956
+intervalo de confianca para 95%: 0.4255444609979336
+O custo medio de Cv foi de 1.339224869181115
+intervalo de confianca para 95%: 0.4290038402522465
+O custo medio de Cs foi 3.529375148179708
+intervalo de confianca para 95%: 0.013733383267941653
+============================= r4 = 0.40000000000000024============================
+O custo medio foi de 4.849600437251434
+intervalo de confianca para 95%: 0.35537284046002793
+O custo medio de Cv foi de 1.3034859002367079
+intervalo de confianca para 95%: 0.3577359097380333
+O custo medio de Cs foi 3.5704575371015266
+intervalo de confianca para 95%: 0.0166509916144262
+============================= r4 = 0.40500000000000025============================
+O custo medio foi de 4.928771345742738
+intervalo de confianca para 95%: 0.4169472274263343
+O custo medio de Cv foi de 1.3362411205422802
+intervalo de confianca para 95%: 0.4202259061879648
+O custo medio de Cs foi 3.616899942387151
+intervalo de confianca para 95%: 0.01563962206744505
+============================= r4 = 0.41000000000000025============================
+O custo medio foi de 5.074228731561537
+intervalo de confianca para 95%: 0.37470349905878036
+O custo medio de Cv foi de 1.4397078945887545
+intervalo de confianca para 95%: 0.37772833789498544
+O custo medio de Cs foi 3.65928654228743
+intervalo de confianca para 95%: 0.014431402616354982
+============================= r4 = 0.41500000000000026============================
+O custo medio foi de 4.863081374537726
+intervalo de confianca para 95%: 0.366753041286199
+O custo medio de Cv foi de 1.1866255731548236
+intervalo de confianca para 95%: 0.37120785536434764
+O custo medio de Cs foi 3.7019507735672823
+intervalo de confianca para 95%: 0.015267183801533168
+============================= r4 = 0.42000000000000026============================
+O custo medio foi de 4.946470747096704
+intervalo de confianca para 95%: 0.32293094105888
+O custo medio de Cv foi de 1.2248512684708945
+intervalo de confianca para 95%: 0.3277638627466314
+O custo medio de Cs foi 3.746062360359421
+intervalo de confianca para 95%: 0.017269441168151673
+============================= r4 = 0.42500000000000027============================
+O custo medio foi de 5.013234026390621
+intervalo de confianca para 95%: 0.31136684517551705
+O custo medio de Cv foi de 1.2485525047505381
+intervalo de confianca para 95%: 0.31698328376327806
+O custo medio de Cs foi 3.7895360897842427
+intervalo de confianca para 95%: 0.017500554763198516
+============================= r4 = 0.43000000000000027============================
+O custo medio foi de 5.039426830764333
+intervalo de confianca para 95%: 0.36588091515187854
+O custo medio de Cv foi de 1.226727061903516
+intervalo de confianca para 95%: 0.3715790353493845
+O custo medio de Cs foi 3.8378902118334937
+intervalo de confianca para 95%: 0.014743029676126854
+============================= r4 = 0.4350000000000003============================
+O custo medio foi de 5.2460381216944825
+intervalo de confianca para 95%: 0.44599063257804383
+O custo medio de Cv foi de 1.3885543113467245
+intervalo de confianca para 95%: 0.45112604933831457
+O custo medio de Cs foi 3.882806896716442
+intervalo de confianca para 95%: 0.01727354391690001
+============================= r4 = 0.4400000000000003============================
+O custo medio foi de 4.996169518911886
+intervalo de confianca para 95%: 0.3162270331131686
+O custo medio de Cv foi de 1.1019745067781153
+intervalo de confianca para 95%: 0.3209077421419698
+O custo medio de Cs foi 3.920551818174086
+intervalo de confianca para 95%: 0.020747171315621146
+============================= r4 = 0.4450000000000003============================
+O custo medio foi de 5.096368821857795
+intervalo de confianca para 95%: 0.3282402516463258
+O custo medio de Cv foi de 1.148140335400368
+intervalo de confianca para 95%: 0.3321928077704611
+O custo medio de Cs foi 3.973341118082189
+intervalo de confianca para 95%: 0.016914731554862478
+============================= r4 = 0.4500000000000003============================
+O custo medio foi de 5.114400969572669
+intervalo de confianca para 95%: 0.3310731687497872
+O custo medio de Cv foi de 1.1304533753392954
+intervalo de confianca para 95%: 0.34005406147955225
+O custo medio de Cs foi 4.009555001500788
+intervalo de confianca para 95%: 0.020658943311693698
+============================= r4 = 0.4550000000000003============================
+O custo medio foi de 5.206834373174445
+intervalo de confianca para 95%: 0.33827305103405164
+O custo medio de Cv foi de 1.1712070227789857
+intervalo de confianca para 95%: 0.3410043875619326
+O custo medio de Cs foi 4.061327392279662
+intervalo de confianca para 95%: 0.015019468067452505
+============================= r4 = 0.4600000000000003============================
+O custo medio foi de 5.195195712163083
+intervalo de confianca para 95%: 0.28957794513728935
+O custo medio de Cv foi de 1.118036563422591
+intervalo de confianca para 95%: 0.29550800058436955
+O custo medio de Cs foi 4.103321820815788
+intervalo de confianca para 95%: 0.017812545398162984
+============================= r4 = 0.4650000000000003============================
+O custo medio foi de 5.340218883391449
+intervalo de confianca para 95%: 0.36161595231830274
+O custo medio de Cv foi de 1.2203398271087387
+intervalo de confianca para 95%: 0.3709686908664567
+O custo medio de Cs foi 4.145985848203904
+intervalo de confianca para 95%: 0.021084004208689357
+============================= r4 = 0.4700000000000003============================
+O custo medio foi de 5.384630215366132
+intervalo de confianca para 95%: 0.37612202049181365
+O custo medio de Cv foi de 1.2202474238371432
+intervalo de confianca para 95%: 0.3817200556683629
+O custo medio de Cs foi 4.191214419905552
+intervalo de confianca para 95%: 0.01763040451495324
+============================= r4 = 0.4750000000000003============================
+O custo medio foi de 5.319045070300895
+intervalo de confianca para 95%: 0.34464101573175115
+O custo medio de Cv foi de 1.103262698779139
+intervalo de confianca para 95%: 0.3475352436598675
+O custo medio de Cs foi 4.2428396807404685
+intervalo de confianca para 95%: 0.017316449419889413
+============================= r4 = 0.4800000000000003============================
+O custo medio foi de 5.37411490335765
+intervalo de confianca para 95%: 0.3884948312634441
+O custo medio de Cv foi de 1.1145166172563847
+intervalo de confianca para 95%: 0.39296474028563955
+O custo medio de Cs foi 4.286328797998858
+intervalo de confianca para 95%: 0.02166689339129451
+============================= r4 = 0.4850000000000003============================
+O custo medio foi de 5.385290041582072
+intervalo de confianca para 95%: 0.3489699875234568
+O custo medio de Cv foi de 1.100946053019825
+intervalo de confianca para 95%: 0.3616405653843739
+O custo medio de Cs foi 4.3113482156385246
+intervalo de confianca para 95%: 0.024624167392390588
+============================= r4 = 0.4900000000000003============================
+O custo medio foi de 5.317470541523834
+intervalo de confianca para 95%: 0.25102355885705635
+O custo medio de Cv foi de 0.9735675109644483
+intervalo de confianca para 95%: 0.25851775521351245
+O custo medio de Cs foi 4.3709645019026775
+intervalo de confianca para 95%: 0.020403953852739968
+============================= r4 = 0.49500000000000033============================
+O custo medio foi de 5.558681986283841
+intervalo de confianca para 95%: 0.35931542738222777
+O custo medio de Cv foi de 1.1650108565545576
+intervalo de confianca para 95%: 0.36439979411523976
+O custo medio de Cs foi 4.420393789793618
+intervalo de confianca para 95%: 0.019701004700337494
+============================= r4 = 0.5000000000000003============================
+O custo medio foi de 5.608371996305545
+intervalo de confianca para 95%: 0.3466941461663269
+O custo medio de Cv foi de 1.178114821016463
+intervalo de confianca para 95%: 0.3536251088912052
+O custo medio de Cs foi 4.458184198520824
+intervalo de confianca para 95%: 0.021232566550958877
+============================= r4 = 0.5050000000000003============================
+O custo medio foi de 5.705888981950579
+intervalo de confianca para 95%: 0.36675893320237885
+O custo medio de Cv foi de 1.243977235411285
+intervalo de confianca para 95%: 0.37238242003520955
+O custo medio de Cs foi 4.490093241636979
+intervalo de confianca para 95%: 0.027966872802064738
+============================= r4 = 0.5100000000000003============================
+O custo medio foi de 5.775690187339803
+intervalo de confianca para 95%: 0.39653959198669775
+O custo medio de Cv foi de 1.2612335850150462
+intervalo de confianca para 95%: 0.3995125298791406
+O custo medio de Cs foi 4.543126954709999
+intervalo de confianca para 95%: 0.021643099867717903
+============================= r4 = 0.5150000000000003============================
+O custo medio foi de 5.606996642898428
+intervalo de confianca para 95%: 0.2631587279919523
+O custo medio de Cv foi de 1.0400615124923904
+intervalo de confianca para 95%: 0.26700738780822936
+O custo medio de Cs foi 4.59595693310466
+intervalo de confianca para 95%: 0.020481648770728562
+============================= r4 = 0.5200000000000004============================
+O custo medio foi de 5.689378918823784
+intervalo de confianca para 95%: 0.3306226355894875
+O custo medio de Cv foi de 1.0827434501610822
+intervalo de confianca para 95%: 0.34007868892882037
+O custo medio de Cs foi 4.634815560890691
+intervalo de confianca para 95%: 0.021453965418662003
+============================= r4 = 0.5250000000000004============================
+O custo medio foi de 5.70763473050474
+intervalo de confianca para 95%: 0.29702886725212646
+O custo medio de Cv foi de 1.0554847244716212
+intervalo de confianca para 95%: 0.3058024156078659
+O custo medio de Cs foi 4.680737801088376
+intervalo de confianca para 95%: 0.027765745645068687
+============================= r4 = 0.5300000000000004============================
+O custo medio foi de 5.775828231507586
+intervalo de confianca para 95%: 0.33178770341899494
+O custo medio de Cv foi de 1.0875561240952378
+intervalo de confianca para 95%: 0.3431650796761695
+O custo medio de Cs foi 4.716953220040151
+intervalo de confianca para 95%: 0.02694025242963099
+============================= r4 = 0.5350000000000004============================
+O custo medio foi de 5.723490234353222
+intervalo de confianca para 95%: 0.2982451759166128
+O custo medio de Cv foi de 0.9821353503463979
+intervalo de confianca para 95%: 0.30289377755006547
+O custo medio de Cs foi 4.7703774307275015
+intervalo de confianca para 95%: 0.02280520229952037
+============================= r4 = 0.5400000000000004============================
+O custo medio foi de 5.843082060057844
+intervalo de confianca para 95%: 0.34671819481373106
+O custo medio de Cv foi de 1.0622673437948524
+intervalo de confianca para 95%: 0.3555978550766937
+O custo medio de Cs foi 4.809577280168363
+intervalo de confianca para 95%: 0.025067712001647924
+============================= r4 = 0.5450000000000004============================
+O custo medio foi de 5.914067303765503
+intervalo de confianca para 95%: 0.37807358405037217
+O custo medio de Cv foi de 1.079540176649769
+intervalo de confianca para 95%: 0.386953287924313
+O custo medio de Cs foi 4.863886350235552
+intervalo de confianca para 95%: 0.020603596028634732
+============================= r4 = 0.5500000000000004============================
+O custo medio foi de 5.812357883139351
+intervalo de confianca para 95%: 0.2553278924098039
+O custo medio de Cv foi de 0.9309928340623509
+intervalo de confianca para 95%: 0.26474315954983313
+O custo medio de Cs foi 4.911082181711419
+intervalo de confianca para 95%: 0.02342481861838512
+============================= r4 = 0.5550000000000004============================
+O custo medio foi de 6.02238557210818
+intervalo de confianca para 95%: 0.3102388607199103
+O custo medio de Cv foi de 1.1003120384380483
+intervalo de confianca para 95%: 0.3189366324149938
+O custo medio de Cs foi 4.951283908749
+intervalo de confianca para 95%: 0.02254849852755472
+============================= r4 = 0.5600000000000004============================
+O custo medio foi de 6.012699393139269
+intervalo de confianca para 95%: 0.3378470664524704
+O custo medio de Cv foi de 1.0461660785243765
+intervalo de confianca para 95%: 0.34282848599011995
+O custo medio de Cs foi 4.99679129435083
+intervalo de confianca para 95%: 0.023097999946559755
+============================= r4 = 0.5650000000000004============================
+O custo medio foi de 5.9733233577455165
+intervalo de confianca para 95%: 0.24784781163313996
+O custo medio de Cv foi de 0.9594000773787315
+intervalo de confianca para 95%: 0.25210362549840915
+O custo medio de Cs foi 5.044138067231159
+intervalo de confianca para 95%: 0.02026337394463286
+============================= r4 = 0.5700000000000004============================
+O custo medio foi de 6.074152823950351
+intervalo de confianca para 95%: 0.2744018679650244
+O custo medio de Cv foi de 1.0181353934466193
+intervalo de confianca para 95%: 0.28193827829462886
+O custo medio de Cs foi 5.0860351212267805
+intervalo de confianca para 95%: 0.020538533127818132
+============================= r4 = 0.5750000000000004============================
+O custo medio foi de 6.021584619972185
+intervalo de confianca para 95%: 0.27759557370093263
+O custo medio de Cv foi de 0.9180685666538415
+intervalo de confianca para 95%: 0.29040919320053254
+O custo medio de Cs foi 5.134036905891711
+intervalo de confianca para 95%: 0.026091615146682668
+============================= r4 = 0.5800000000000004============================
+O custo medio foi de 6.035892475713759
+intervalo de confianca para 95%: 0.23405021795587336
+O custo medio de Cv foi de 0.8892990650213254
+intervalo de confianca para 95%: 0.2442399210917519
+O custo medio de Cs foi 5.176853938055167
+intervalo de confianca para 95%: 0.024636656040990343
+============================= r4 = 0.5850000000000004============================
+O custo medio foi de 6.116000016744279
+intervalo de confianca para 95%: 0.2706961814498368
+O custo medio de Cv foi de 0.9216509387461364
+intervalo de confianca para 95%: 0.27531913424698423
+O custo medio de Cs foi 5.2246798430135275
+intervalo de confianca para 95%: 0.021565088968425114
+============================= r4 = 0.5900000000000004============================
+O custo medio foi de 6.2525715283707415
+intervalo de confianca para 95%: 0.3359679469519741
+O custo medio de Cv foi de 1.0261433063728127
+intervalo de confianca para 95%: 0.3446241007312475
+O custo medio de Cs foi 5.257159875906728
+intervalo de confianca para 95%: 0.02767401016706806
+============================= r4 = 0.5950000000000004============================
+O custo medio foi de 6.1934283207840535
+intervalo de confianca para 95%: 0.2704024478161385
+O custo medio de Cv foi de 0.9149292932692652
+intervalo de confianca para 95%: 0.279110724023261
+O custo medio de Cs foi 5.309915543426189
+intervalo de confianca para 95%: 0.02529543353902781
+============================= r4 = 0.6000000000000004============================
+O custo medio foi de 6.159511556210413
+intervalo de confianca para 95%: 0.2455482938302756
+O custo medio de Cv foi de 0.8389776709653354
+intervalo de confianca para 95%: 0.2487563179355811
+O custo medio de Cs foi 5.351658109428553
+intervalo de confianca para 95%: 0.02294775478564724
+============================= r4 = 0.6050000000000004============================
+O custo medio foi de 6.166974432926591
+intervalo de confianca para 95%: 0.2049314737209709
+O custo medio de Cv foi de 0.7959742859345359
+intervalo de confianca para 95%: 0.21174985421145756
+O custo medio de Cs foi 5.401953325894022
+intervalo de confianca para 95%: 0.02509859591472393
+============================= r4 = 0.6100000000000004============================
+O custo medio foi de 6.229330894729727
+intervalo de confianca para 95%: 0.2346702668864776
+O custo medio de Cv foi de 0.8153975920490766
+intervalo de confianca para 95%: 0.23852786086578745
+O custo medio de Cs foi 5.444922940739791
+intervalo de confianca para 95%: 0.022135261491861846
+============================= r4 = 0.6150000000000004============================
+O custo medio foi de 6.550319381062805
+intervalo de confianca para 95%: 0.3581102495121329
+O custo medio de Cv foi de 1.0944840874097777
+intervalo de confianca para 95%: 0.3655924033762056
+O custo medio de Cs foi 5.487136896316974
+intervalo de confianca para 95%: 0.024055135901823364
+============================= r4 = 0.6200000000000004============================
+O custo medio foi de 6.511539951033935
+intervalo de confianca para 95%: 0.35078503030151825
+O custo medio de Cv foi de 1.012434939637053
+intervalo de confianca para 95%: 0.36157250882039527
+O custo medio de Cs foi 5.532013116315514
+intervalo de confianca para 95%: 0.027687754303366015
+============================= r4 = 0.6250000000000004============================
+O custo medio foi de 6.411181552933784
+intervalo de confianca para 95%: 0.24750718638192176
+O custo medio de Cv foi de 0.8770010242245954
+intervalo de confianca para 95%: 0.25609878922997836
+O custo medio de Cs foi 5.566902768988955
+intervalo de confianca para 95%: 0.030322234237116906
+============================= r4 = 0.6300000000000004============================
+O custo medio foi de 6.4966249235028535
+intervalo de confianca para 95%: 0.24338719938526626
+O custo medio de Cv foi de 0.9041590732065583
+intervalo de confianca para 95%: 0.24995090438083203
+O custo medio de Cs foi 5.624685369262369
+intervalo de confianca para 95%: 0.02252106273597583
+============================= r4 = 0.6350000000000005============================
+O custo medio foi de 6.504064902064279
+intervalo de confianca para 95%: 0.23870371096706722
+O custo medio de Cv foi de 0.8808455080723112
+intervalo de confianca para 95%: 0.25504599607049655
+O custo medio de Cs foi 5.655863616204312
+intervalo de confianca para 95%: 0.034205558936521156
+============================= r4 = 0.6400000000000005============================
+O custo medio foi de 6.621086715247538
+intervalo de confianca para 95%: 0.2710840607952646
+O custo medio de Cv foi de 0.9571270710393321
+intervalo de confianca para 95%: 0.27978680587873644
+O custo medio de Cs foi 5.696643189829586
+intervalo de confianca para 95%: 0.032279799303562
+============================= r4 = 0.6450000000000005============================
+O custo medio foi de 6.545050922722755
+intervalo de confianca para 95%: 0.21416001195409226
+O custo medio de Cv foi de 0.8144557991419965
+intervalo de confianca para 95%: 0.21901760055325922
+O custo medio de Cs foi 5.7638639748851
+intervalo de confianca para 95%: 0.021937701767303128
+============================= r4 = 0.6500000000000005============================
+O custo medio foi de 6.544941242018097
+intervalo de confianca para 95%: 0.1986998913328828
+O custo medio de Cv foi de 0.777819655028386
+intervalo de confianca para 95%: 0.20562127613991538
+O custo medio de Cs foi 5.800013185859843
+intervalo de confianca para 95%: 0.025901873668005514
+============================= r4 = 0.6550000000000005============================
+O custo medio foi de 6.677178135635197
+intervalo de confianca para 95%: 0.2693212398757813
+O custo medio de Cv foi de 0.8752301523163086
+intervalo de confianca para 95%: 0.2785074828223555
+O custo medio de Cs foi 5.83483714752333
+intervalo de confianca para 95%: 0.029144219581591795
+============================= r4 = 0.6600000000000005============================
+O custo medio foi de 6.724436517901123
+intervalo de confianca para 95%: 0.24959411084792277
+O custo medio de Cv foi de 0.8727608881058104
+intervalo de confianca para 95%: 0.2598572361382042
+O custo medio de Cs foi 5.8852259662945094
+intervalo de confianca para 95%: 0.027876047947384228
+============================= r4 = 0.6650000000000005============================
+O custo medio foi de 6.578497749362359
+intervalo de confianca para 95%: 0.1709527180258828
+O custo medio de Cv foi de 0.6676895233359869
+intervalo de confianca para 95%: 0.1765028727928916
+O custo medio de Cs foi 5.944598160298375
+intervalo de confianca para 95%: 0.02188990773956761
+============================= r4 = 0.6700000000000005============================
+O custo medio foi de 6.759469354098899
+intervalo de confianca para 95%: 0.22519243702473707
+O custo medio de Cv foi de 0.8167466848180228
+intervalo de confianca para 95%: 0.23407288614233723
+O custo medio de Cs foi 5.975784107699046
+intervalo de confianca para 95%: 0.026948073664908544
+============================= r4 = 0.6750000000000005============================
+O custo medio foi de 6.803923862915703
+intervalo de confianca para 95%: 0.19418662782133359
+O custo medio de Cv foi de 0.8249665633377247
+intervalo de confianca para 95%: 0.20247677276796786
+O custo medio de Cs foi 6.012919953540567
+intervalo de confianca para 95%: 0.028918922952075318
+============================= r4 = 0.6800000000000005============================
+O custo medio foi de 6.814832010118308
+intervalo de confianca para 95%: 0.21819599963589667
+O custo medio de Cv foi de 0.7750321909901337
+intervalo de confianca para 95%: 0.22536645134410177
+O custo medio de Cs foi 6.073989251712568
+intervalo de confianca para 95%: 0.025992479701358408
+============================= r4 = 0.6850000000000005============================
+O custo medio foi de 6.975381312145311
+intervalo de confianca para 95%: 0.3298184036916793
+O custo medio de Cv foi de 0.918115693684034
+intervalo de confianca para 95%: 0.34624225952660925
+O custo medio de Cs foi 6.09151072567479
+intervalo de confianca para 95%: 0.034453474023136414
+============================= r4 = 0.6900000000000005============================
+O custo medio foi de 6.904402502584876
+intervalo de confianca para 95%: 0.2161450314824483
+O custo medio de Cv foi de 0.7804853634827431
+intervalo de confianca para 95%: 0.2215947776306835
+O custo medio de Cs foi 6.1589652711989284
+intervalo de confianca para 95%: 0.023436224212340317
+============================= r4 = 0.6950000000000005============================
+O custo medio foi de 6.861131699558118
+intervalo de confianca para 95%: 0.1590198691834103
+O custo medio de Cv foi de 0.6909254544321659
+intervalo de confianca para 95%: 0.16900633794259382
+O custo medio de Cs foi 6.204903498299359
+intervalo de confianca para 95%: 0.026263495330469018
+============================= r4 = 0.7000000000000005============================
+O custo medio foi de 6.9896299573629825
+intervalo de confianca para 95%: 0.2035140027520214
+O custo medio de Cv foi de 0.7803339975422149
+intervalo de confianca para 95%: 0.20955658969085839
+O custo medio de Cs foi 6.243775104584424
+intervalo de confianca para 95%: 0.02743596678610134
+============================= r4 = 0.7050000000000005============================
+O custo medio foi de 7.094161519889114
+intervalo de confianca para 95%: 0.23581380121992193
+O custo medio de Cv foi de 0.843865014685241
+intervalo de confianca para 95%: 0.24710596760012796
+O custo medio de Cs foi 6.285417050714503
+intervalo de confianca para 95%: 0.03053296774635301
+============================= r4 = 0.7100000000000005============================
+O custo medio foi de 7.167215260209278
+intervalo de confianca para 95%: 0.24315713441266956
+O custo medio de Cv foi de 0.8807120874534278
+intervalo de confianca para 95%: 0.259363144404039
+O custo medio de Cs foi 6.322149583082842
+intervalo de confianca para 95%: 0.04598570970709079
+============================= r4 = 0.7150000000000005============================
+O custo medio foi de 7.149118341674551
+intervalo de confianca para 95%: 0.25010763934745983
+O custo medio de Cv foi de 0.8149941644485463
+intervalo de confianca para 95%: 0.2611948635400481
+O custo medio de Cs foi 6.370138485578687
+intervalo de confianca para 95%: 0.03884711974447511
+============================= r4 = 0.7200000000000005============================
+O custo medio foi de 7.180349810844546
+intervalo de confianca para 95%: 0.29719031165335547
+O custo medio de Cv foi de 0.8197883357959467
+intervalo de confianca para 95%: 0.3178103379929969
+O custo medio de Cs foi 6.396487138298735
+intervalo de confianca para 95%: 0.05524846211046261
+============================= r4 = 0.7250000000000005============================
+O custo medio foi de 7.081019601953537
+intervalo de confianca para 95%: 0.1451484346965078
+O custo medio de Cv foi de 0.6443765798861456
+intervalo de confianca para 95%: 0.15191225875575937
+O custo medio de Cs foi 6.472724399437874
+intervalo de confianca para 95%: 0.02533492053394886
+============================= r4 = 0.7300000000000005============================
+O custo medio foi de 7.286754731950948
+intervalo de confianca para 95%: 0.2976363115761547
+O custo medio de Cv foi de 0.8095350875694116
+intervalo de confianca para 95%: 0.3114909800903137
+O custo medio de Cs foi 6.512805149278156
+intervalo de confianca para 95%: 0.03504951191891197
+============================= r4 = 0.7350000000000005============================
+O custo medio foi de 7.314066614138701
+intervalo de confianca para 95%: 0.20487690304924638
+O custo medio de Cv foi de 0.7887717808401404
+intervalo de confianca para 95%: 0.21228105139008027
+O custo medio de Cs foi 6.561906534482797
+intervalo de confianca para 95%: 0.027770469263113797
+============================= r4 = 0.7400000000000005============================
+O custo medio foi de 7.265099658221072
+intervalo de confianca para 95%: 0.19645341213963283
+O custo medio de Cv foi de 0.7103114831145585
+intervalo de confianca para 95%: 0.21450592386632414
+O custo medio de Cs foi 6.591541566683123
+intervalo de confianca para 95%: 0.037991334857576366
+============================= r4 = 0.7450000000000006============================
+O custo medio foi de 7.357734262087315
+intervalo de confianca para 95%: 0.18207750639847273
+O custo medio de Cv foi de 0.756953574106968
+intervalo de confianca para 95%: 0.19643149121544468
+O custo medio de Cs foi 6.6372899532293355
+intervalo de confianca para 95%: 0.03546219505660675
+============================= r4 = 0.7500000000000006============================
+O custo medio foi de 7.3496253645783955
+intervalo de confianca para 95%: 0.15918023891189637
+O custo medio de Cv foi de 0.7030231518564694
+intervalo de confianca para 95%: 0.16778918001531878
+O custo medio de Cs foi 6.683573430358609
+intervalo de confianca para 95%: 0.03035884136689098
+============================= r4 = 0.7550000000000006============================
+O custo medio foi de 7.406646633626548
+intervalo de confianca para 95%: 0.1875026113972084
+O custo medio de Cv foi de 0.7112722031273543
+intervalo de confianca para 95%: 0.1984728241010648
+O custo medio de Cs foi 6.732307413410266
+intervalo de confianca para 95%: 0.029814805306309568
+============================= r4 = 0.7600000000000006============================
+O custo medio foi de 7.446142181564227
+intervalo de confianca para 95%: 0.20596934765410538
+O custo medio de Cv foi de 0.6986326428539437
+intervalo de confianca para 95%: 0.21134224941743449
+O custo medio de Cs foi 6.78472743679298
+intervalo de confianca para 95%: 0.03089892323041797
+============================= r4 = 0.7650000000000006============================
+O custo medio foi de 7.443411433019049
+intervalo de confianca para 95%: 0.1697303912481921
+O custo medio de Cv foi de 0.6618527418004787
+intervalo de confianca para 95%: 0.1830668343938275
+O custo medio de Cs foi 6.818975491616804
+intervalo de confianca para 95%: 0.03674475871902771
+============================= r4 = 0.7700000000000006============================
+O custo medio foi de 7.588226842033017
+intervalo de confianca para 95%: 0.18611446800982315
+O custo medio de Cv foi de 0.7817647192227091
+intervalo de confianca para 95%: 0.20510328730624003
+O custo medio de Cs foi 6.843866263977392
+intervalo de confianca para 95%: 0.042379683682528986
+============================= r4 = 0.7750000000000006============================
+O custo medio foi de 7.6500587140263265
+intervalo de confianca para 95%: 0.2830980981464099
+O custo medio de Cv foi de 0.766737234566181
+intervalo de confianca para 95%: 0.2911853473630435
+O custo medio de Cs foi 6.921449634376151
+intervalo de confianca para 95%: 0.02846918455309305
+============================= r4 = 0.7800000000000006============================
+O custo medio foi de 7.638768663357863
+intervalo de confianca para 95%: 0.19055496768349708
+O custo medio de Cv foi de 0.7371722922078494
+intervalo de confianca para 95%: 0.20785828100171536
+O custo medio de Cs foi 6.940037305494723
+intervalo de confianca para 95%: 0.04774535316839974
+============================= r4 = 0.7850000000000006============================
+O custo medio foi de 7.783628167194425
+intervalo de confianca para 95%: 0.22958296935744416
+O custo medio de Cv foi de 0.8301647820874927
+intervalo de confianca para 95%: 0.24095131516206686
+O custo medio de Cs foi 6.991849433095444
+intervalo de confianca para 95%: 0.03376690813773281
+============================= r4 = 0.7900000000000006============================
+O custo medio foi de 7.667443289324742
+intervalo de confianca para 95%: 0.1598807175845804
+O custo medio de Cv foi de 0.6597723947337306
+intervalo de confianca para 95%: 0.17842902313690598
+O custo medio de Cs foi 7.046780965666917
+intervalo de confianca para 95%: 0.03727774721790973
+============================= r4 = 0.7950000000000006============================
+O custo medio foi de 7.773647688779528
+intervalo de confianca para 95%: 0.183299083858505
+O custo medio de Cv foi de 0.7163744940070284
+intervalo de confianca para 95%: 0.19243601647118064
+O custo medio de Cs foi 7.0958059615744995
+intervalo de confianca para 95%: 0.03840011032876184
+============================= r4 = 0.8000000000000006============================
+O custo medio foi de 7.862040136097642
+intervalo de confianca para 95%: 0.21657716930937632
+O custo medio de Cv foi de 0.771135048268454
+intervalo de confianca para 95%: 0.22677599891514558
+O custo medio de Cs foi 7.1299659901070935
+intervalo de confianca para 95%: 0.03380710513447317
+============================= r4 = 0.8050000000000006============================
+O custo medio foi de 7.873569362508209
+intervalo de confianca para 95%: 0.18680166512352928
+O custo medio de Cv foi de 0.7304625418805838
+intervalo de confianca para 95%: 0.20621034630284268
+O custo medio de Cs foi 7.182612325819509
+intervalo de confianca para 95%: 0.03911095118318267
+============================= r4 = 0.8100000000000006============================
+O custo medio foi de 7.8426940501953775
+intervalo de confianca para 95%: 0.2238671677653366
+O custo medio de Cv foi de 0.6666760807259964
+intervalo de confianca para 95%: 0.24971233234741794
+O custo medio de Cs foi 7.215583343807882
+intervalo de confianca para 95%: 0.040694829521688645
+============================= r4 = 0.8150000000000006============================
+O custo medio foi de 7.9910854245466805
+intervalo de confianca para 95%: 0.2158136732497998
+O custo medio de Cv foi de 0.780868880691101
+intervalo de confianca para 95%: 0.2345809696779143
+O custo medio de Cs foi 7.249627840978248
+intervalo de confianca para 95%: 0.047406344345348364
+============================= r4 = 0.8200000000000006============================
+O custo medio foi de 8.001936637107102
+intervalo de confianca para 95%: 0.19703290346717056
+O custo medio de Cv foi de 0.7281044412554849
+intervalo de confianca para 95%: 0.20550513864491923
+O custo medio de Cs foi 7.313984679459971
+intervalo de confianca para 95%: 0.03269946568630051
+============================= r4 = 0.8250000000000006============================
+O custo medio foi de 8.027969245438895
+intervalo de confianca para 95%: 0.1936533391684573
+O custo medio de Cv foi de 0.7123063086846613
+intervalo de confianca para 95%: 0.20434374665227562
+O custo medio de Cs foi 7.3558733823578155
+intervalo de confianca para 95%: 0.03608589214496722
+============================= r4 = 0.8300000000000006============================
+O custo medio foi de 8.152300363973952
+intervalo de confianca para 95%: 0.29197703476710407
+O custo medio de Cv foi de 0.8111809487238749
+intervalo de confianca para 95%: 0.3251414135841218
+O custo medio de Cs foi 7.381460313705283
+intervalo de confianca para 95%: 0.06211489178405697
+============================= r4 = 0.8350000000000006============================
+O custo medio foi de 8.020516487213238
+intervalo de confianca para 95%: 0.12879479531482393
+O custo medio de Cv foi de 0.6108558419254958
+intervalo de confianca para 95%: 0.13753746813824214
+O custo medio de Cs foi 7.450623851599891
+intervalo de confianca para 95%: 0.03548408549794913
+============================= r4 = 0.8400000000000006============================
+O custo medio foi de 8.150945202916935
+intervalo de confianca para 95%: 0.1644638099466015
+O custo medio de Cv foi de 0.7202875886566136
+intervalo de confianca para 95%: 0.1849234620769767
+O custo medio de Cs foi 7.470965012727952
+intervalo de confianca para 95%: 0.04640590927197753
+============================= r4 = 0.8450000000000006============================
+O custo medio foi de 8.172110428532594
+intervalo de confianca para 95%: 0.15364031141514123
+O custo medio de Cv foi de 0.6953612924496022
+intervalo de confianca para 95%: 0.17770770739068298
+O custo medio de Cs foi 7.517705399089915
+intervalo de confianca para 95%: 0.05066097435158812
+============================= r4 = 0.8500000000000006============================
+O custo medio foi de 8.223822213578503
+intervalo de confianca para 95%: 0.1770344847162185
+O custo medio de Cv foi de 0.6857021157650732
+intervalo de confianca para 95%: 0.19862925261751188
+O custo medio de Cs foi 7.579185431271124
+intervalo de confianca para 95%: 0.04595787181388346
+============================= r4 = 0.8550000000000006============================
+O custo medio foi de 8.223798427195582
+intervalo de confianca para 95%: 0.17114717076934227
+O custo medio de Cv foi de 0.6430896539783503
+intervalo de confianca para 95%: 0.1867996675145986
+O custo medio de Cs foi 7.622033210952415
+intervalo de confianca para 95%: 0.04182387095518729
+============================= r4 = 0.8600000000000007============================
+O custo medio foi de 8.304673732749551
+intervalo de confianca para 95%: 0.16578821178405076
+O custo medio de Cv foi de 0.6957518663328748
+intervalo de confianca para 95%: 0.18064640605521623
+O custo medio de Cs foi 7.650247480741329
+intervalo de confianca para 95%: 0.04406988447469029
+============================= r4 = 0.8650000000000007============================
+O custo medio foi de 8.301400924621163
+intervalo de confianca para 95%: 0.15987479214644507
+O custo medio de Cv foi de 0.6368371744573617
+intervalo de confianca para 95%: 0.17247315392254428
+O custo medio de Cs foi 7.706293746899171
+intervalo de confianca para 95%: 0.037874094006978554
+============================= r4 = 0.8700000000000007============================
+O custo medio foi de 8.442059459114837
+intervalo de confianca para 95%: 0.2518490387851981
+O custo medio de Cv foi de 0.7220760404623359
+intervalo de confianca para 95%: 0.26819715892783297
+O custo medio de Cs foi 7.7616990732592805
+intervalo de confianca para 95%: 0.03331782906468616
+============================= r4 = 0.8750000000000007============================
+O custo medio foi de 8.335161432874282
+intervalo de confianca para 95%: 0.1366478823160603
+O custo medio de Cv foi de 0.5701972838657359
+intervalo de confianca para 95%: 0.14702939493658337
+O custo medio de Cs foi 7.807383024577158
+intervalo de confianca para 95%: 0.034003739178110316
+============================= r4 = 0.8800000000000007============================
+O custo medio foi de 8.514772524395655
+intervalo de confianca para 95%: 0.1773579188440996
+O custo medio de Cv foi de 0.7157189013959855
+intervalo de confianca para 95%: 0.1972926286781983
+O custo medio de Cs foi 7.840941524541876
+intervalo de confianca para 95%: 0.06446992420679228
+============================= r4 = 0.8850000000000007============================
+O custo medio foi de 8.567264007778443
+intervalo de confianca para 95%: 0.2163154820009423
+O custo medio de Cv foi de 0.7216639398277053
+intervalo de confianca para 95%: 0.22443387701059866
+O custo medio de Cs foi 7.888383370080432
+intervalo de confianca para 95%: 0.038399512764308086
+============================= r4 = 0.8900000000000007============================
+O custo medio foi de 8.464798442808476
+intervalo de confianca para 95%: 0.1226885510923583
+O custo medio de Cv foi de 0.5717679424635019
+intervalo de confianca para 95%: 0.138876912982201
+O custo medio de Cs foi 7.936080736894507
+intervalo de confianca para 95%: 0.042479800239865986
+============================= r4 = 0.8950000000000007============================
+O custo medio foi de 8.629501884127853
+intervalo de confianca para 95%: 0.20482055847017372
+O custo medio de Cv foi de 0.6992459279046044
+intervalo de confianca para 95%: 0.22702362874081983
+O custo medio de Cs foi 7.9727951996200375
+intervalo de confianca para 95%: 0.04373606627845894
+============================= r4 = 0.9000000000000007============================
+O custo medio foi de 8.61477010605062
+intervalo de confianca para 95%: 0.14669983589850155
+O custo medio de Cv foi de 0.6485610144091993
+intervalo de confianca para 95%: 0.1679235660150135
+O custo medio de Cs foi 8.009569297279059
+intervalo de confianca para 95%: 0.05149211327541229
+============================= r4 = 0.9050000000000007============================
+O custo medio foi de 8.634400076033401
+intervalo de confianca para 95%: 0.16825638644771257
+O custo medio de Cv foi de 0.6156238407413083
+intervalo de confianca para 95%: 0.17840164896554014
+O custo medio de Cs foi 8.06206688685053
+intervalo de confianca para 95%: 0.038059225213563225
+============================= r4 = 0.9100000000000007============================
+O custo medio foi de 8.686468506059253
+intervalo de confianca para 95%: 0.16782415929675762
+O custo medio de Cv foi de 0.6160593536073149
+intervalo de confianca para 95%: 0.18237664939609297
+O custo medio de Cs foi 8.113797606089888
+intervalo de confianca para 95%: 0.03784544001510427
+============================= r4 = 0.9150000000000007============================
+O custo medio foi de 8.702866709146878
+intervalo de confianca para 95%: 0.15376579361822873
+O custo medio de Cv foi de 0.5658982281738448
+intervalo de confianca para 95%: 0.16443590796136684
+O custo medio de Cs foi 8.18061776577152
+intervalo de confianca para 95%: 0.03260049578144613
+============================= r4 = 0.9200000000000007============================
+O custo medio foi de 8.775474103495904
+intervalo de confianca para 95%: 0.1684051968666815
+O custo medio de Cv foi de 0.6073603013775438
+intervalo de confianca para 95%: 0.17900468975993827
+O custo medio de Cs foi 8.211846382088082
+intervalo de confianca para 95%: 0.03914097864336184
+============================= r4 = 0.9250000000000007============================
+O custo medio foi de 8.838607872451739
+intervalo de confianca para 95%: 0.13846234918339048
+O custo medio de Cv foi de 0.6288611076876917
+intervalo de confianca para 95%: 0.15414171477611208
+O custo medio de Cs foi 8.253842798181369
+intervalo de confianca para 95%: 0.04172427904305738
+============================= r4 = 0.9300000000000007============================
+O custo medio foi de 8.851129180027154
+intervalo de confianca para 95%: 0.14154582375754726
+O custo medio de Cv foi de 0.602443301222261
+intervalo de confianca para 95%: 0.15850267374313318
+O custo medio de Cs foi 8.293099398334242
+intervalo de confianca para 95%: 0.037409987243549235
+============================= r4 = 0.9350000000000007============================
+O custo medio foi de 8.90376323684111
+intervalo de confianca para 95%: 0.17675198842878628
+O custo medio de Cv foi de 0.6039364526321311
+intervalo de confianca para 95%: 0.18616938278195633
+O custo medio de Cs foi 8.344304497706764
+intervalo de confianca para 95%: 0.038781340645710774
+============================= r4 = 0.9400000000000007============================
+O custo medio foi de 8.95556640543965
+intervalo de confianca para 95%: 0.1843949273805106
+O custo medio de Cv foi de 0.6270007646516409
+intervalo de confianca para 95%: 0.19703994599477492
+O custo medio de Cs foi 8.373306845539702
+intervalo de confianca para 95%: 0.04490716085975012
+============================= r4 = 0.9450000000000007============================
+O custo medio foi de 9.023704590343621
+intervalo de confianca para 95%: 0.14934403504110705
+O custo medio de Cv foi de 0.6445957463243182
+intervalo de confianca para 95%: 0.16153993362088473
+O custo medio de Cs foi 8.42411038207026
+intervalo de confianca para 95%: 0.03989643314342755
+============================= r4 = 0.9500000000000007============================
+O custo medio foi de 9.027205751240968
+intervalo de confianca para 95%: 0.17182059215366194
+O custo medio de Cv foi de 0.6094355474395506
+intervalo de confianca para 95%: 0.18354958037061914
+O custo medio de Cs foi 8.463113734443395
+intervalo de confianca para 95%: 0.04169008620112382
+============================= r4 = 0.9550000000000007============================
+O custo medio foi de 9.031317098211778
+intervalo de confianca para 95%: 0.14383902187419603
+O custo medio de Cv foi de 0.5648108846039395
+intervalo de confianca para 95%: 0.16094326954431146
+O custo medio de Cs foi 8.511868960017258
+intervalo de confianca para 95%: 0.040230933406785956
+============================= r4 = 0.9600000000000007============================
+O custo medio foi de 9.053734488953873
+intervalo de confianca para 95%: 0.14956939964607008
+O custo medio de Cv foi de 0.5216855487342681
+intervalo de confianca para 95%: 0.15817934858653787
+O custo medio de Cs foi 8.577432339442705
+intervalo de confianca para 95%: 0.03326745742198142
+============================= r4 = 0.9650000000000007============================
+O custo medio foi de 9.16191668109139
+intervalo de confianca para 95%: 0.14804064722778196
+O custo medio de Cv foi de 0.5957087837357746
+intervalo de confianca para 95%: 0.16090264365599105
+O custo medio de Cs foi 8.611703486796499
+intervalo de confianca para 95%: 0.0343798407739165
+============================= r4 = 0.9700000000000008============================
+O custo medio foi de 9.200697458396366
+intervalo de confianca para 95%: 0.1365671013215164
+O custo medio de Cv foi de 0.6117562524184672
+intervalo de confianca para 95%: 0.15345611865287767
+O custo medio de Cs foi 8.634978267330558
+intervalo de confianca para 95%: 0.04583296561512635
+============================= r4 = 0.9750000000000008============================
+O custo medio foi de 9.29328655906405
+intervalo de confianca para 95%: 0.16307216500667115
+O custo medio de Cv foi de 0.6398338346851051
+intervalo de confianca para 95%: 0.18345805825230488
+O custo medio de Cs foi 8.69968639697769
+intervalo de confianca para 95%: 0.04677763312797883
+============================= r4 = 0.9800000000000008============================
+O custo medio foi de 9.360905678842506
+intervalo de confianca para 95%: 0.19863161186356956
+O custo medio de Cv foi de 0.6687403595051292
+intervalo de confianca para 95%: 0.21089362161964506
+O custo medio de Cs foi 8.738862920495697
+intervalo de confianca para 95%: 0.040182424617770274
+============================= r4 = 0.9850000000000008============================
+O custo medio foi de 9.317192779976777
+intervalo de confianca para 95%: 0.14972126217754775
+O custo medio de Cv foi de 0.5879069893339881
+intervalo de confianca para 95%: 0.16395540452934418
+O custo medio de Cs foi 8.776323807042788
+intervalo de confianca para 95%: 0.04334399758419678
+============================= r4 = 0.9900000000000008============================
+O custo medio foi de 9.328487700739764
+intervalo de confianca para 95%: 0.12781560822627117
+O custo medio de Cv foi de 0.5569792766188926
+intervalo de confianca para 95%: 0.1460182157599125
+O custo medio de Cs foi 8.818329578102759
+intervalo de confianca para 95%: 0.05109122125323736
+============================= r4 = 0.9950000000000008============================
+O custo medio foi de 9.423432855206183
+intervalo de confianca para 95%: 0.14670085116285592
+O custo medio de Cv foi de 0.5909788490081552
+intervalo de confianca para 95%: 0.162874964111402
+O custo medio de Cs foi 8.87933055047164
+intervalo de confianca para 95%: 0.03996226165042592
+============================= r4 = 1.0000000000000007============================
+O custo medio foi de 9.471443671534223
+intervalo de confianca para 95%: 0.1729856047458307
+O custo medio de Cv foi de 0.6340256612487479
+intervalo de confianca para 95%: 0.19774489471826076
+O custo medio de Cs foi 8.884769557282869
+intervalo de confianca para 95%: 0.06453622116685429
+
+
+O custo ótimo é 4.103631742510405 e o tempo de cura medio é 2.4898827584579126 para R4 0.22500000000000012
